@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import Pradip from "../aashuu/profilebw.jpg";
+import Pradip from "../sshubh/profilebw.jpg";
 import textureImg from "../resources/images/background_texture.png";
 import "../styles/Credentials.css";
 import { Link, NavLink } from "react-router-dom";
