@@ -1,6 +1,6 @@
 import React from "react";
 import textureImg from "../resources/images/background_texture.png";
-import aashuu from "../aashuu/profilebw.jpg";
+import aashuu from "../sshubh/profilebw.jpg";
 import nextIcon from "../resources/images/Next_icon.svg";
 import starIcon from "../resources/images/star1.svg";
 import "../styles/Home.css";
