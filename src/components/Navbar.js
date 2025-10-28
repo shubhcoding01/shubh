@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import textureImg from "../resources/images/background_texture.png";
-import logo from "../aashuu/aashuuicon.png";
+import logo from "../sshubh/aashuuicon.png";
 import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
 
