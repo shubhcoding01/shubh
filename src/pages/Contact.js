@@ -97,7 +97,7 @@ const Contact = () => {
                 data-aos="zoom-in"
               >
                 <li>
-                  <Link
+                  {/* <Link
                     className="shadow_box"
                     to="https://www.devdisplay.org/profile/codeaashu"
                     target="_blank"
@@ -109,7 +109,7 @@ const Contact = () => {
                       height="32px"
                       className="DevDisplay-icon"
                     />
-                  </Link>
+                  </Link> */}
                 </li>
                 <li>
                   <Link
