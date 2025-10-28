@@ -374,10 +374,9 @@
 
 // export default Credentials;
 
-
 import React from "react";
 import Navbar from "../components/Navbar";
-import Pradip from "../sshubh/profilebw.jpg";
+import Shubh from "../sshubh/profilebw.jpg";
 import textureImg from "../resources/images/background_texture.png";
 import "../styles/Credentials.css";
 import { Link, NavLink } from "react-router-dom";
@@ -400,7 +399,7 @@ const Credentials = () => {
                 <div className="shadow_box">
                   <img src={textureImg} alt="" className="bg_img" />
                   <div className="img_box">
-                    <img src={Pradip} alt="About Me" />
+                    <img src={Shubh} alt="About Me" />
                   </div>
                   <h2>Shubham Raj</h2>
                   <p>@shubh</p>
@@ -461,8 +460,24 @@ const Credentials = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link to="https://x.com/shubh__coding" target='_blank'>
-                        <svg width="16px" height="16px" strokeWidth="1.6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFFFFF"><path d="M23 3.01s-2.018 1.192-3.14 1.53a4.48 4.48 0 00-7.86 3v1a10.66 10.66 0 01-9-4.53s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5 0-.278-.028-.556-.08-.83C21.94 5.674 23 3.01 23 3.01z" stroke="#FFFFFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"></path></svg>
+                      <Link to="https://x.com/shubh__coding" target="_blank">
+                        <svg
+                          width="16px"
+                          height="16px"
+                          strokeWidth="1.6"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          color="#FFFFFF"
+                        >
+                          <path
+                            d="M23 3.01s-2.018 1.192-3.14 1.53a4.48 4.48 0 00-7.86 3v1a10.66 10.66 0 01-9-4.53s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5 0-.278-.028-.556-.08-.83C21.94 5.674 23 3.01 23 3.01z"
+                            stroke="#FFFFFF"
+                            strokeWidth="1.6"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          ></path>
+                        </svg>
                       </Link>
                     </li>
                   </ul>
@@ -479,14 +494,17 @@ const Credentials = () => {
               <div className="credential_about" data-aos="zoom-in">
                 <h2>About Me</h2>
                 <p>
-                  Hi, I’m <b>Shubham Raj</b> — a passionate Full Stack Developer from Patna, Bihar. 
-                  I recently completed my <b>BCA (Bachelor of Computer Applications)</b> from CIMAGE Professional College (AKU University) 
-                  with a CGPA of 8.31. I specialize in building full-stack web applications using <b>Java, Spring Boot, React.js, and MySQL</b>.
+                  Hi, I’m <b>Shubham Raj</b> — a results-driven <b>Full Stack Developer</b> 
+                  passionate about building scalable and secure web applications. 
+                  I combine strong backend development skills with creative problem-solving to deliver 
+                  impactful digital products.
                 </p>
                 <p>
-                  I love crafting robust, scalable, and visually appealing web solutions. I’ve worked with technologies like 
-                  <b> Django, Node.js, and Wix Studio</b> to build both front-end and back-end systems.  
-                  Currently, I’m also exploring the field of <b>Cybersecurity</b> — learning how to make systems not just functional, but secure.
+                  My expertise lies in <b>Java, Spring Boot, React.js, Python, and MySQL</b>. 
+                  I enjoy translating ideas into functional, reliable, and efficient code. 
+                  I’ve developed full-stack systems, internal dashboards, and CMS-integrated web apps. 
+                  Alongside development, I’m also exploring the world of <b>Cybersecurity</b> — 
+                  ensuring software is not only powerful but also secure.
                 </p>
               </div>
 
@@ -495,15 +513,26 @@ const Credentials = () => {
                 <h2 data-aos="fade-up">Experience</h2>
 
                 <div className="credential_edc_exp_item" data-aos="zoom-in">
-                  <h4>AUGUST 2025 - SEPTEMBER 2025</h4>
+                  <h4>AUG 2025 - SEP 2025</h4>
                   <h3>Full Stack Developer (Wix Studio)</h3>
                   <h5>Ingenious Prime</h5>
                   <p>
-                    Developed an internal dashboard in <b>Wix Studio</b> for content and member management 
-                    with a custom UI and CMS connectivity. Integrated full CMS backend structures, 
-                    designed automated workflows using <b>Velo (JavaScript)</b>, and implemented 
-                    role-based access logic. Built a <b>Leave & Attendance Management System</b> integrated with the dashboard 
-                    and configured real-time data synchronization on the local company network.
+                    Built an advanced internal dashboard for content and member management 
+                    using <b>Wix Studio</b> and <b>Velo (JavaScript)</b>. Designed and implemented 
+                    backend data workflows, integrated role-based access, and automated business logic. 
+                    Delivered a <b>Leave & Attendance Management System</b> for real-time tracking.
+                  </p>
+                </div>
+
+                <div className="credential_edc_exp_item" data-aos="zoom-in">
+                  <h4>JAN 2025 - APR 2025</h4>
+                  <h3>Full Stack Developer (Project)</h3>
+                  <h5>E-Commerce Seller Management Platform</h5>
+                  <p>
+                    Developed a full-stack multi-vendor e-commerce platform using 
+                    <b> React.js</b> and <b>Spring Boot</b> with <b>MySQL</b>. 
+                    Implemented product management, authentication (JWT), 
+                    and real-time order tracking. Focused on optimizing API performance and responsive UI design.
                   </p>
                 </div>
               </div>
@@ -516,7 +545,6 @@ const Credentials = () => {
                   <h4>2022 - 2025</h4>
                   <h3>Bachelor of Computer Applications (BCA)</h3>
                   <h5>CIMAGE Professional College – Aryabhatta Knowledge University</h5>
-                  
                 </div>
 
                 <div className="credential_edc_exp_item" data-aos="zoom-in">
@@ -527,8 +555,8 @@ const Credentials = () => {
 
                 <div className="credential_edc_exp_item" data-aos="zoom-in">
                   <h4>2017 - 2018</h4>
-                  <h3>Secondary School (10th)</h3>
-                  <h5>International School Patna (ICSE)</h5>
+                  <h3>Secondary School (ICSE)</h3>
+                  <h5>International School</h5>
                 </div>
               </div>
 
@@ -537,26 +565,17 @@ const Credentials = () => {
                 <h2 data-aos="fade-up">Technical Skills</h2>
                 <div className="d-grid skill_items flex-wrap">
                   {[
-                    "Java", "Spring Boot", "React.js", "JavaScript", "C++", "Django", "MySQL", "HTML", "CSS",
-                    "Node.js", "Express.js", "MongoDB", "Firebase", "Git", "GitHub", "RESTful APIs",
-                    "Computer Networking", "Wix Studio", "Webflow", "AWS (Basics)"
+                    "Java", "Python", "Spring Boot", "React.js", "JavaScript",
+                    "HTML", "CSS", "C++", "MySQL", "MongoDB", "Django", 
+                    "Node.js", "Express.js", "RESTful APIs", "Git & GitHub", 
+                    "Docker (Basics)", "Firebase", "Wix Studio", "Webflow", 
+                    "Computer Networking", "Linux", "Cybersecurity (Learning)"
                   ].map((skill, i) => (
                     <div className="skill_item" data-aos="zoom-in" key={i}>
                       <span className="percent">{Math.floor(80 + Math.random() * 15)}%</span>
                       <h3 className="name">{skill}</h3>
                     </div>
                   ))}
-                </div>
-              </div>
-
-              {/* Interests Section */}
-              <div className="credential_edc_exp credential_interests">
-                <h2 data-aos="fade-up">Interests & Hobbies</h2>
-                <div className="credential_edc_exp_item" data-aos="zoom-in">
-                  <p>⚡ Exploring Cybersecurity & Ethical Hacking</p>
-                  <p>🏏 Playing Cricket</p>
-                  <p>🎵 Listening to Music</p>
-                  <p>🏍️ Riding Bikes</p>
                 </div>
               </div>
 
@@ -570,6 +589,17 @@ const Credentials = () => {
                 </div>
               </div>
 
+              {/* Interests Section */}
+              <div className="credential_edc_exp credential_interests">
+                <h2 data-aos="fade-up">Interests & Hobbies</h2>
+                <div className="credential_edc_exp_item" data-aos="zoom-in">
+                  <p>💻 Exploring Cybersecurity & Ethical Hacking</p>
+                  <p>🧠 Learning Emerging Technologies</p>
+                  <p>🏏 Playing Cricket</p>
+                  <p>🎵 Listening to Music</p>
+                  <p>🏍️ Riding Bikes</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
