@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../aashuu/aashuuicon.png";
+import logo from "../sshubh/aashuuicon.png";
 import { Link, NavLink } from "react-router-dom";
 import "../styles/Footer.css";
 

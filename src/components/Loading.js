@@ -1,5 +1,5 @@
 import React from "react";
-import PradipLoader from "../aashuu/aashuuicon.png";
+import PradipLoader from "../sshubh/aashuuicon.png";
 import "../styles/Loading.css";
 
 const Loading = () => {
