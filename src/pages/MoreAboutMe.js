@@ -155,6 +155,7 @@ import WorkTogether from '../components/WorkTogether'
 import { Link } from 'react-router-dom'
 import Footer from '../components/Footer'
 
+
 const MoreAboutMe = () => {
 
     return (
@@ -184,20 +185,16 @@ const MoreAboutMe = () => {
                                 <img src={StarIcon} alt="bg" className='star_icon' />
                                 <h1>Shubham Raj</h1>
                                 <p>
-                                    Hey there, I’m <span className="font-semibold">Shubham</span> — but you can call me <span className="font-semibold">Shubh</span>. 
-                                    I’m a <span className="font-semibold">Full Stack Developer</span> with a deep interest in <span className="font-semibold">backend development</span> 
-                                    and system design. I build reliable, high-performance web applications using 
-                                    <span className="font-semibold"> React.js</span> and <span className="font-semibold">Spring Boot</span>.
-                                </p>
-                                <p>
-                                    I love transforming ideas into scalable digital products — blending clean architecture, efficient APIs, 
-                                    and smooth user experience. I’ve worked across frontend, backend, and deployment, which helps me 
-                                    understand the complete product lifecycle from concept to launch.
-                                </p>
-                                <p>
-                                    I’ve completed my <span className="font-semibold">BCA (Bachelor of Computer Applications)</span> in 2025 and 
-                                    I’m currently exploring the field of <span className="font-semibold">Cybersecurity</span> to expand my 
-                                    technical depth and problem-solving approach.
+                                    Hi, I’m <span className="font-semibold">Shubham Raj</span> — you can call me <span className="font-semibold">Shubh</span>.  
+                                    I’m a <span className="font-semibold">Full Stack Java Developer</span> with a passion for building robust, scalable, and secure applications.  
+                                    I work primarily with <span className="font-semibold">React.js</span> and <span className="font-semibold">Spring Boot</span>,  
+                                    integrating clean frontend design with powerful backend logic.  
+                                    <br /><br />
+                                    Having completed my <span className="font-semibold">BCA in 2025</span> from CIMAGE Professional College, I’ve built projects ranging from 
+                                    full-fledged e-commerce platforms to content dashboards and internal management systems.  
+                                    <br /><br />
+                                    I’m also exploring <span className="font-semibold">Cybersecurity</span> to deepen my understanding of how systems can stay both efficient and secure.  
+                                    My approach blends creativity, logic, and curiosity — helping me craft solutions that truly make an impact.
                                 </p>
                             </div>
                         </div>
@@ -209,19 +206,33 @@ const MoreAboutMe = () => {
                                 <h3>EXPERIENCE</h3>
                                 <ul>
                                     <li>
-                                        <p className="date">JANUARY 2024 - MAY 2024</p>
-                                        <h2>UI/UX Designer & Web Developer</h2>
-                                        <p className="type">Advish Technology</p>
+                                        <p className="date">AUGUST 2025 - SEPTEMBER 2025</p>
+                                        <h2>Full Stack Developer (Wix Studio)</h2>
+                                        <p className="type">Ingenious Prime</p>
+                                        <p className="desc">
+                                            Developed an internal content and member management dashboard in Wix Studio with custom UI and CMS connectivity.  
+                                            Built backend logic using <span className="font-semibold">Velo (JavaScript)</span> for dynamic data flows, workflow automation, and role-based access control.  
+                                            Designed and implemented a Leave & Attendance Management System integrated with the company CMS.
+                                        </p>
                                     </li>
                                     <li>
-                                        <p className="date">JUNE 2024 - MARCH 2025</p>
-                                        <h2>Web Developer & Designer</h2>
-                                        <p className="type">LPS Brands</p>
+                                        <p className="date">2024 - 2025</p>
+                                        <h2>Freelance Full Stack Developer</h2>
+                                        <p className="type">Independent Projects</p>
+                                        <p className="desc">
+                                            Worked on multiple full-stack applications using <span className="font-semibold">React.js</span>, 
+                                            <span className="font-semibold">Spring Boot</span>, and <span className="font-semibold">MySQL</span>.  
+                                            Focused on secure authentication systems, scalable APIs, and responsive web UIs for real-world clients.
+                                        </p>
                                     </li>
                                     <li>
-                                        <p className="date">MARCH 2025 - Present</p>
-                                        <h2>Product Engineer</h2>
-                                        <p className="type">LPS Brands</p>
+                                        <p className="date">MARCH 2025 - PRESENT</p>
+                                        <h2>Cybersecurity & Product Development</h2>
+                                        <p className="type">Personal Learning & Research</p>
+                                        <p className="desc">
+                                            Exploring the fundamentals of <span className="font-semibold">cybersecurity</span>, ethical hacking, and secure coding practices.  
+                                            Building projects that bridge backend engineering with security-first design principles.
+                                        </p>
                                     </li>
                                 </ul>
                             </div>
@@ -232,19 +243,23 @@ const MoreAboutMe = () => {
                                 <h3>EDUCATION</h3>
                                 <ul>
                                     <li>
-                                        <p className="date">2018</p>
-                                        <h2>Matriculation</h2>
-                                        <p className="type">International School</p>
+                                        <p className="date">2022 - 2025</p>
+                                        <h2>Bachelor of Computer Applications (BCA)</h2>
+                                        <p className="type">CIMAGE Professional College, Patna</p>
+                                        <p className="desc">
+                                            Graduated with <span className="font-semibold">8.31 CGPA</span> under Aryabhatta Knowledge University.  
+                                            Focused on Java, C++, Database Management, and Web Development.
+                                        </p>
                                     </li>
                                     <li>
                                         <p className="date">2020 - 2021</p>
-                                        <h2>Intermediate - Science</h2>
-                                        <p className="type">+2 High School (BSEB)</p>
+                                        <h2>Intermediate (Science)</h2>
+                                        <p className="type">O.I.P.V Kesarbagh Khaira — BSEB</p>
                                     </li>
                                     <li>
-                                        <p className="date">2022 - 2025</p>
-                                        <h2>Bachelor of Computer Applications</h2>
-                                        <p className="type">Aryabhatta Knowledge University</p>
+                                        <p className="date">2017 - 2018</p>
+                                        <h2>Matriculation (10th)</h2>
+                                        <p className="type">International School, Patna (ICSE)</p>
                                     </li>
                                 </ul>
                             </div>
