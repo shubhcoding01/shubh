@@ -67,26 +67,32 @@ const Home = () => {
                           Your Vision + My Visuals =<b>$$$</b>
                           <img decoding="async" src={starIcon} alt="Star" />
                         </span> */}
-                        <span>
-  Code Secure + Build Smart = <b>Trust</b>
-  <img decoding="async" src={starIcon} alt="Star" />
-</span>
-<span>
-  Create + Protect = <b>Confidence</b>
-  <img decoding="async" src={starIcon} alt="Star" />
-</span>
-<span>
-  Innovation + Security = <b>Excellence</b>
-  <img decoding="async" src={starIcon} alt="Star" />
-</span>
-<span>
-  Developer + Defender = <b>Next Gen</b>
-  <img decoding="async" src={starIcon} alt="Star" />
-</span>
-<span>
-  Build Fast + Stay Secure = <b>Win</b>
-  <img decoding="async" src={starIcon} alt="Star" />
-</span>
+                        <div className="flex flex-wrap justify-center items-center gap-4 text-lg md:text-xl font-semibold text-white tracking-wide">
+  <span className="flex items-center gap-2">
+    Code&nbsp;Secure&nbsp;+&nbsp;Build&nbsp;Smart&nbsp;=&nbsp;<b className="text-cyan-400">Trust</b>
+    <img decoding="async" src={starIcon} alt="Star" className="w-5 h-5 animate-pulse" />
+  </span>
+
+  <span className="flex items-center gap-2">
+    Create&nbsp;+&nbsp;Protect&nbsp;=&nbsp;<b className="text-emerald-400">Confidence</b>
+    <img decoding="async" src={starIcon} alt="Star" className="w-5 h-5 animate-spin-slow" />
+  </span>
+
+  <span className="flex items-center gap-2">
+    Innovation&nbsp;+&nbsp;Security&nbsp;=&nbsp;<b className="text-yellow-400">Excellence</b>
+    <img decoding="async" src={starIcon} alt="Star" className="w-5 h-5 animate-bounce" />
+  </span>
+
+  <span className="flex items-center gap-2">
+    Developer&nbsp;+&nbsp;Defender&nbsp;=&nbsp;<b className="text-purple-400">Next&nbsp;Gen</b>
+    <img decoding="async" src={starIcon} alt="Star" className="w-5 h-5 animate-pulse" />
+  </span>
+
+  <span className="flex items-center gap-2">
+    Build&nbsp;Fast&nbsp;+&nbsp;Stay&nbsp;Secure&nbsp;=&nbsp;<b className="text-rose-400">Win</b>
+    <img decoding="async" src={starIcon} alt="Star" className="w-5 h-5 animate-spin-slow" />
+  </span>
+</div>
 
                       </div>
                     </div>
