@@ -1,6 +1,6 @@
 import React from "react";
 import textureImg from "../resources/images/background_texture.png";
-import aashuu from "../sshubh/profilebw.jpg";
+import sshubh from "../sshubh/profilebw.jpg";
 import nextIcon from "../resources/images/Next_icon.svg";
 import starIcon from "../resources/images/star1.svg";
 import "../styles/Home.css";
@@ -29,7 +29,7 @@ const Home = () => {
                 <Link to="/about" className="overlay_link"></Link>
                 <img src={textureImg} alt="" className="bg_img" />
                 <div className="img_box">
-                  <img src={aashuu} alt="" />
+                  <img src={sshubh} alt="" />
                 </div>
                 <div className="infos">
                   <h4>Web Developer</h4>
@@ -47,7 +47,7 @@ const Home = () => {
                   <div className="banner shadow_box">
                     <div className="marquee">
                       <div>
-                        <span>
+                        {/* <span>
                           Your Vision + My Visuals =<b>$$$</b>
                           <img decoding="async" src={starIcon} alt="Star" />
                         </span>
@@ -66,7 +66,28 @@ const Home = () => {
                         <span>
                           Your Vision + My Visuals =<b>$$$</b>
                           <img decoding="async" src={starIcon} alt="Star" />
-                        </span>
+                        </span> */}
+                        <span>
+  Code Secure + Build Smart = <b>Trust</b>
+  <img decoding="async" src={starIcon} alt="Star" />
+</span>
+<span>
+  Create + Protect = <b>Confidence</b>
+  <img decoding="async" src={starIcon} alt="Star" />
+</span>
+<span>
+  Innovation + Security = <b>Excellence</b>
+  <img decoding="async" src={starIcon} alt="Star" />
+</span>
+<span>
+  Developer + Defender = <b>Next Gen</b>
+  <img decoding="async" src={starIcon} alt="Star" />
+</span>
+<span>
+  Build Fast + Stay Secure = <b>Win</b>
+  <img decoding="async" src={starIcon} alt="Star" />
+</span>
+
                       </div>
                     </div>
                   </div>
