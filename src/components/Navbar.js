@@ -48,7 +48,7 @@ const Navbar = (props) => {
               </NavLink>
             </nav>
 
-            <NavLink to="tel:+916209950346" className="theme_btn">
+            <NavLink to="tel:+919123171457" className="theme_btn">
               <img src={textureImg} alt="" className="bg_img" />
               Let's talk
             </NavLink>
