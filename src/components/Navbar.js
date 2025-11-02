@@ -16,7 +16,6 @@ const Navbar = (props) => {
         <div className="container">
           <div className="gx-row d-flex align-items-center justify-content-between">
             <NavLink to="/" className="logo">
-              {/* <h3>aashuu.</h3> */}
               <img src={logo} alt="" />
             </NavLink>
             <nav className={`navbar ${isMenuActive ? "active" : ""}`}>
