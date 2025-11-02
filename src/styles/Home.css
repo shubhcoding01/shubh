@@ -1,4 +1,4 @@
-@keyframes marquee {
+/*@keyframes marquee {
   0% {
     transform: translateX(0);
   }
@@ -552,7 +552,7 @@ a:hover {
     font-size: 12px;
   }
 }/*# sourceMappingURL=Home.css.map */
-
+/*-----------------------------------------------------------------------------------------------
 @font-face {
   font-family: 'Adelia';
   src: url('../resources/fonts/Starlita.otf') format('opentype');
@@ -571,6 +571,7 @@ a:hover {
 
 .inner_profile_icons a:hover .DevDisplay-icon {
   filter: brightness(0); /* Turns the icon black */
+/*---------------------------------------------------------------------------------------------  
 }
 
 .custom-text {
@@ -597,4 +598,661 @@ a:hover {
   margin-bottom: 20px;
   color: #FFFFFF;
   text-align: center;
+} */
+
+/* --- ENHANCED KEYFRAMES --- */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  /* Adjusted for a potentially cleaner loop */
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px); /* Increased float height */
+  }
+}
+
+/* --- ENHANCED 3D/GLASSPHORISM BASE --- */
+.shadow_box {
+  position: relative;
+  border-radius: 30px;
+  background: #0F0F0F;
+  /* ENHANCEMENT: Added a subtle 3D lift with a box shadow and inner glow */
+  box-shadow:
+    0 4px 60px rgba(0, 0, 0, 0.4), /* Stronger ambient shadow for lift */
+    inset 0 0 15px rgba(255, 255, 255, 0.05); /* Subtle inner glow from light source */
+  transition: all 0.4s ease; /* Added transition for hover effect */
+}
+
+.shadow_box:hover {
+  /* Subtle change on hover to simulate interaction */
+  box-shadow:
+    0 10px 80px rgba(0, 0, 0, 0.6), /* Slightly larger, darker shadow on hover */
+    inset 0 0 20px rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px); /* Slight lift */
+}
+
+/* Inner highlight/bevel for 3D look */
+.shadow_box::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  /* ENHANCEMENT: Adjusted gradient for a more pronounced light source (stronger opacity) */
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.08));
+  border-radius: 30px;
+  opacity: 0.3; /* Increased opacity for more shine */
+  pointer-events: none;
+}
+
+/* Border/Outer Glow */
+.shadow_box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* ENHANCEMENT: Stronger border glow */
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.02));
+  z-index: -1;
+  border-radius: 30px;
+  margin: -2px; /* Increased margin for a thicker outer "border" glow */
+}
+
+.shadow_box * {
+  z-index: 2;
+  position: relative;
+}
+
+/* --- ABOUT AREA STYLES --- */
+.about_area {
+  padding-top: 80px;
+}
+.about_area .about_me_box {
+  position: relative;
+  padding: 40px 40px;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  /* ENHANCEMENT: Added Glassmorphism backdrop filter */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.about_area .about_me_box .overlay_link {
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  z-index: 9;
+}
+.about_area .about_me_box .bg_img {
+  opacity: 0.1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.about_area .about_me_box .img_box {
+  width: 224px;
+  height: 224px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  flex: none;
+}
+.about_area .about_me_box .img_box img {
+  display: block;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+.about_area .about_me_box .infos {
+  padding-top: 30px;
+  position: initial;
+}
+.about_area .about_me_box .infos h4 {
+  color: var(--text-color);
+  opacity: 0.7;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  margin-bottom: 5px;
+}
+.about_area .about_me_box .infos h1 {
+  font-size: 36px;
+  line-height: 40px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.about_area .about_me_box .infos p {
+  color: var(--text-color);
+  opacity: 0.7;
+  letter-spacing: 0.3px;
+  margin: 0;
+}
+.about_area .about_me_box .infos .about_btn {
+  display: block;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  opacity: 0.2;
+  transition: 0.3s;
+  /* ENHANCEMENT: Added drop shadow for button pop */
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.1));
+}
+.about_area .about_me_box:hover .infos .about_btn {
+  opacity: 1;
+  /* Stronger shadow on hover */
+  filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.5));
+}
+.about_area .banner {
+  padding: 17px 25px;
+  margin-bottom: 24px;
+}
+.about_area .banner .marquee {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 19px;
+  overflow-x: hidden;
+}
+.about_area .banner .marquee div {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  font-size: 12px;
+  animation: marquee 5s linear infinite;
+}
+.about_area .banner .marquee div span {
+  font-size: 12px;
+  color: var(--text-main-color);
+}
+.about_area .banner .marquee div span b {
+  color: #fff;
+  font-weight: 400;
+  margin: 0 5px;
+}
+.about_area .banner .marquee div img {
+  display: inline-block;
+  margin: 0 5px;
+}
+.about_area .info_box {
+  padding: 22px;
+}
+.about_area .info_box .overlay_link {
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  z-index: 9;
+}
+.about_area .info_box .bg_img {
+  opacity: 0.1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.about_area .info_box .infos h4 {
+  color: var(--text-color);
+  font-size: 12px;
+  opacity: 0.5;
+  font-weight: 500;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+.about_area .info_box .infos h1 {
+  font-size: 20px;
+  color: var(--white-color);
+  font-weight: 500;
+}
+.about_area .info_box .about_btn {
+  display: block;
+  opacity: 0.2;
+  transition: 0.3s;
+}
+.about_area .info_box:hover .about_btn {
+  opacity: 1;
+}
+.about_area .info_box .icon_boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 56px;
+  margin-top: 46px;
+}
+.about_area .info_box .icon_boxes img {
+  width: 40px;
+}
+.about_area .inner_profile_icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+  padding: 22px;
+  margin-bottom: 16px;
+}
+
+/* ENHANCEMENT: STRONGER 3D/NEUMORPHIC ICONS */
+.about_area .inner_profile_icons a {
+  text-decoration: none;
+  width: 82px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+  /* Stronger 3D lift for the circle buttons */
+  box-shadow:
+    0 10px 30px -5px rgba(0, 0, 0, 0.5), /* Stronger main shadow */
+    inset 0 0 10px rgba(255, 255, 255, 0.2); /* Inner highlight */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Sharper border */
+  color: #fff;
+  transition: all 0.3s ease;
+  flex: none;
+  z-index: 1;
+}
+.about_area .inner_profile_icons a svg {
+  width: 32px;
+  height: 32px;
+}
+.about_area .inner_profile_icons a:hover {
+  background: var(--white-color);
+  /* Simulating a "press" or "active" 3D state */
+  box-shadow:
+    0 2px 5px rgba(0, 0, 0, 0.6), /* Smaller shadow when 'pressed' */
+    inset 0 0 20px rgba(0, 0, 0, 0.5); /* Darker inner shadow */
+  transform: translateY(1px); /* Slight downward push */
+}
+.about_area .inner_profile_icons a:hover svg path {
+  stroke: #000000;
+}
+
+/* Frosted Glass Background for Icons */
+.about_area .inner_profile_icons a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: -1;
+  /* Stronger frost effect */
+  opacity: 0.2;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.2));
+  backdrop-filter: blur(15px); /* Stronger blur */
+  -webkit-backdrop-filter: blur(15px);
+}
+.about_area .inner_profile_icons::before {
+  opacity: 0.1;
+}
+.about_area .inner_profile_icons::after {
+  opacity: 0.5;
+}
+.about_area .about_client_box .clients {
+  gap: 24px;
+  z-index: 2;
+  position: relative;
+}
+.about_area .about_client_box .clients .client_item {
+  position: relative;
+  border-radius: 30px;
+  text-align: center;
+  flex: 1;
+  padding: 42px 30px 42px 30px;
+}
+.about_area .about_client_box .clients .client_item h1 {
+  color: var(--white-color);
+  font-size: 34px;
+  margin-bottom: 17px;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+.about_area .about_client_box .clients .client_item p {
+  font-size: 12px;
+  color: var(--text-color);
+  opacity: 0.5;
+  margin: 0;
+  text-transform: uppercase;
+}
+.about_area .about_client_box .clients .client_item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.1;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  border-radius: 30px;
+}
+.about_area .about_contact_box {
+  padding-bottom: 34px;
+  padding-top: 83px;
+}
+.about_area .about_contact_box .star_icon {
+  position: absolute;
+  left: 30px;
+  top: 0;
+  opacity: 0.5;
+  margin: 0;
+}
+.about_area .about_contact_box .star_icon .about_btn {
+  display: block;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  opacity: 0.2;
+  transition: 0.3s;
+}
+.about_area .about_contact_box h1 {
+  font-size: 44px;
+  line-height: 52px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+}
+.about_area .about_contact_box h1 span {
+  color: var(--primary-color);
+}
+.about_area .about_contact_box .about_btn {
+  display: block;
+  opacity: 0.2;
+  transition: 0.3s;
+}
+
+/* --- 404 SECTION (ENHANCED 3D TEXT) --- */
+.fourohfour_section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+.fourohfour_section h1 {
+  font-size: 150px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: black;
+  margin: 0;
+  /* ENHANCEMENT: Stronger 3D text effect */
+  text-shadow:
+    -5px -5px 0 #fff, /* Top-left 'light' outline */
+    5px 5px 0 #000, /* Bottom-right 'shadow' outline */
+    10px 10px 20px #555; /* Deeper drop shadow for 3D depth */
+}
+.fourohfour_section h6 {
+  font-size: 160px;
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+.fourohfour_section p {
+  font-size: 20px;
+  font-weight: 500;
+}
+#astronaut {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 20px;
+  animation: float 4s ease-in-out infinite; /* Smoother floating */
+  /* ENHANCEMENT: Added a shadow to the astronaut to 'lift' it off the background */
+  filter: drop-shadow(0 15px 10px rgba(0, 0, 0, 0.7));
+}
+
+a {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #2980b9;
+}
+
+/* --- MEDIA QUERIES --- */
+@media (max-width: 1280px) {
+  .about_area .inner_profile_icons {
+    gap: 30px;
+  }
+}
+@media (max-width: 1090px) {
+  .about_area .info_box .pradip_sign {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .about_area .about_me_box {
+    padding: 40px 30px;
+    height: 100%;
+  }
+  .about_area .about_me_box .img_box {
+    width: 190px;
+    height: 190px;
+  }
+  .about_area .about_me_box .infos h1 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+  .about_area .about_me_box .infos .about_btn {
+    bottom: 25px;
+  }
+  .about_area .about_me_box .infos {
+    padding-top: 10px;
+  }
+  .about_area .info_box .icon_boxes {
+    margin-bottom: 39px;
+    margin-top: 31px;
+    gap: 40px;
+  }
+  .about_area .inner_profile_icons a {
+    width: 70px;
+    height: 70px;
+  }
+  .about_area .about_client_box .clients .client_item h1 {
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 991px) {
+  .about_area .info_box .pradip_sign {
+    width: auto;
+  }
+  .fourohfour_section h1 {
+    font-size: 100px;
+    margin-bottom: -20px;
+  }
+  .fourohfour_section h6 {
+    font-size: 100px;
+  }
+  .fourohfour_section p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 585px) {
+  .about_area .about_me_box {
+    flex-direction: column;
+  }
+  .about_area .about_me_box .img_box {
+    margin: auto;
+    width: 224px;
+    height: 224px;
+  }
+  .about_area .about_me_box .infos h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  .about_area .about_client_box .clients {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+  .about_area .about_contact_box h1 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+  .fourohfour_section h1 {
+    font-size: 70px;
+    margin-bottom: 0px;
+  }
+  .fourohfour_section h6 {
+    font-size: 70px;
+  }
+  .fourohfour_section p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .about_area .inner_profile_icons {
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  .about_area .about_me_box .infos p {
+    width: 80%;
+  }
+  .about_area {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 428px) {
+  .about_area .inner_profile_icons {
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .about_area .info_box .icon_boxes {
+    gap: 25px;
+  }
+  .about_area .info_box .icon_boxes img {
+    width: 30px;
+  }
+  .about_area .about_me_box {
+    padding: 40px 22px;
+    height: 100%;
+  }
+  .fourohfour_section h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+  }
+  .fourohfour_section h6 {
+    font-size: 50px;
+    font-weight: 600;
+  }
+  .fourohfour_section p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 360px) {
+  .about_area .inner_profile_icons a {
+    width: 60px;
+    height: 60px;
+  }
+  .about_area .inner_profile_icons {
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  .about_area .inner_profile_icons a svg {
+    width: 30px;
+    height: 30px;
+  }
+  .fourohfour_section h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+  }
+  .fourohfour_section h6 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .fourohfour_section p {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=Home.css.map */
+
+/* --- CUSTOM FONTS AND TEXT --- */
+@font-face {
+  font-family: 'Adelia';
+  src: url('../resources/fonts/Starlita.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.DevDisplay-icon {
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s ease;
+}
+
+.DevDisplay-icon:hover {
+  filter: brightness(0);
+}
+
+.inner_profile_icons a:hover .DevDisplay-icon {
+  filter: brightness(0); /* Turns the icon black */
+}
+
+.custom-text {
+  font-family: 'Adelia', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  /* ENHANCEMENT: Text shadow for a subtle glow */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.bg_text {
+  font-size: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+.sign_text {
+  font-family: 'Adelia', sans-serif;
+  font-size: 60px; /* ENHANCEMENT: Increased font size */
+  margin-bottom: 25px; /* ENHANCEMENT: Increased margin */
+  color: #FFFFFF;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* ENHANCEMENT: Subtle glow */
 }
