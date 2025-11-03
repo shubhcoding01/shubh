@@ -763,8 +763,9 @@ a:hover {
 }
 .about_area .about_me_box:hover .infos .about_btn {
   opacity: 1;
-  /* Stronger shadow on hover */
-  filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.5));
+  /* ENHANCEMENT: Stronger shadow on hover with light green/blue glow */
+  filter: drop-shadow(0 0 8px rgba(0, 255, 127, 0.7)) /* Light Green */
+          drop-shadow(0 0 12px rgba(0, 200, 255, 0.5)); /* Light Blue */
 }
 .about_area .banner {
   padding: 17px 25px;
@@ -1231,8 +1232,10 @@ a:hover {
   font-family: 'Adelia', sans-serif;
   color: #FFFFFF;
   text-align: center;
-  /* ENHANCEMENT: Text shadow for a subtle glow */
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  /* ENHANCEMENT: Text shadow for a subtle glow - Light Green/Light Blue */
+  text-shadow:
+    0 0 8px rgba(0, 255, 127, 0.7), /* Light Green glow */
+    0 0 15px rgba(0, 200, 255, 0.5); /* Light Blue glow, slightly wider */
 }
 
 .bg_text {
@@ -1254,5 +1257,8 @@ a:hover {
   margin-bottom: 25px; /* ENHANCEMENT: Increased margin */
   color: #FFFFFF;
   text-align: center;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* ENHANCEMENT: Subtle glow */
+  /* ENHANCEMENT: Subtle glow - Light Green/Light Blue */
+  text-shadow:
+    0 0 10px rgba(0, 255, 127, 0.7), /* Light Green glow */
+    0 0 20px rgba(0, 200, 255, 0.5); /* Light Blue glow, slightly wider */
 }
