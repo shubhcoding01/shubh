@@ -605,7 +605,6 @@ a:hover {
   0% {
     transform: translateX(0);
   }
-  /* Adjusted for a potentially cleaner loop */
   100% {
     transform: translateX(-100%);
   }
@@ -613,31 +612,36 @@ a:hover {
 
 @keyframes float {
   0%, 100% {
-    transform: translateY(0);
+    transform: translateY(0) rotateZ(0deg); /* Added slight rotation */
   }
   50% {
-    transform: translateY(-25px); /* Increased float height */
+    transform: translateY(-30px) rotateZ(2deg); /* Increased float height and added rotation */
   }
 }
 
-/* --- ENHANCED 3D/GLASSPHORISM BASE --- */
+/* --- ENHANCED 8D/GLASSPHORISM BASE --- */
 .shadow_box {
   position: relative;
   border-radius: 30px;
   background: #0F0F0F;
-  /* ENHANCEMENT: Added a subtle 3D lift with a box shadow and inner glow */
+  /* ENHANCEMENT: Deeper, more complex shadows for 8D lift and inner light */
   box-shadow:
-    0 4px 60px rgba(0, 0, 0, 0.4), /* Stronger ambient shadow for lift */
-    inset 0 0 15px rgba(255, 255, 255, 0.05); /* Subtle inner glow from light source */
-  transition: all 0.4s ease; /* Added transition for hover effect */
+    0 8px 100px rgba(0, 0, 0, 0.6), /* Deeper ambient shadow */
+    0 4px 20px rgba(0, 0, 0, 0.3),  /* Closer, sharper shadow */
+    inset 0 0 25px rgba(255, 255, 255, 0.08); /* More pronounced inner glow */
+  border: 1px solid rgba(255, 255, 255, 0.08); /* Subtle border for definition */
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smoother, more dynamic transition */
+  transform-style: preserve-3d; /* Crucial for 3D effects on children */
 }
 
 .shadow_box:hover {
-  /* Subtle change on hover to simulate interaction */
+  /* More dramatic lift and glow on hover */
   box-shadow:
-    0 10px 80px rgba(0, 0, 0, 0.6), /* Slightly larger, darker shadow on hover */
-    inset 0 0 20px rgba(255, 255, 255, 0.1);
-  transform: translateY(-2px); /* Slight lift */
+    0 15px 120px rgba(0, 0, 0, 0.8), /* Even darker, wider shadow */
+    0 8px 30px rgba(0, 0, 0, 0.5),
+    inset 0 0 35px rgba(255, 255, 255, 0.15); /* Stronger inner glow */
+  transform: translateY(-5px) rotateX(1deg) rotateY(1deg); /* Slight 3D rotation on hover */
+  border-color: rgba(0, 255, 127, 0.3); /* Subtle green border glow on hover */
 }
 
 /* Inner highlight/bevel for 3D look */
@@ -649,11 +653,12 @@ a:hover {
   width: 100%;
   height: 100%;
   z-index: 1;
-  /* ENHANCEMENT: Adjusted gradient for a more pronounced light source (stronger opacity) */
-  background: linear-gradient(120deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.08));
+  /* ENHANCEMENT: Stronger, more directional light source */
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1)); /* Sharper light */
   border-radius: 30px;
-  opacity: 0.3; /* Increased opacity for more shine */
+  opacity: 0.4; /* Increased opacity for more shine */
   pointer-events: none;
+  transform: translateZ(1px); /* Pushes this layer slightly forward in 3D space */
 }
 
 /* Border/Outer Glow */
@@ -664,16 +669,21 @@ a:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  /* ENHANCEMENT: Stronger border glow */
-  background: linear-gradient(120deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.02));
+  /* ENHANCEMENT: More intense, colored border glow for depth */
+  background:
+    linear-gradient(120deg, rgba(0, 255, 127, 0.3), rgba(0, 200, 255, 0.1)), /* Green to Blue gradient */
+    linear-gradient(240deg, rgba(0, 200, 255, 0.3), rgba(0, 255, 127, 0.1)); /* Reverse gradient for richer blend */
   z-index: -1;
   border-radius: 30px;
-  margin: -2px; /* Increased margin for a thicker outer "border" glow */
+  margin: -3px; /* Increased margin for a thicker, more visible outer "border" glow */
+  filter: blur(2px); /* Soften the outer glow */
+  transform: translateZ(-1px); /* Pushes this layer slightly backward */
 }
 
 .shadow_box * {
   z-index: 2;
   position: relative;
+  transform-style: preserve-3d; /* Ensure children can have their own 3D transforms */
 }
 
 /* --- ABOUT AREA STYLES --- */
@@ -686,9 +696,10 @@ a:hover {
   display: flex;
   align-items: flex-start;
   gap: 30px;
-  /* ENHANCEMENT: Added Glassmorphism backdrop filter */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  /* ENHANCEMENT: Stronger Glassmorphism backdrop filter */
+  backdrop-filter: blur(15px) brightness(1.1);
+  -webkit-backdrop-filter: blur(15px) brightness(1.1);
+  background: rgba(15, 15, 15, 0.6); /* Slightly more opaque for depth */
 }
 .about_area .about_me_box .overlay_link {
   left: 0;
@@ -701,7 +712,7 @@ a:hover {
   z-index: 9;
 }
 .about_area .about_me_box .bg_img {
-  opacity: 0.1;
+  opacity: 0.15; /* Slightly more visible background image for depth */
   position: absolute;
   left: 0;
   top: 0;
@@ -710,6 +721,7 @@ a:hover {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  transform: translateZ(-2px); /* Pushes background image further back */
 }
 .about_area .about_me_box .img_box {
   width: 224px;
@@ -718,6 +730,9 @@ a:hover {
   overflow: hidden;
   border-radius: 20px;
   flex: none;
+  /* ENHANCEMENT: Subtle 3D lift for the profile image container */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  transform: translateZ(2px); /* Bring image box slightly forward */
 }
 .about_area .about_me_box .img_box img {
   display: block;
@@ -744,12 +759,14 @@ a:hover {
   color: #fff;
   font-weight: 500;
   margin-bottom: 12px;
+  transform: translateZ(1px); /* Text slightly forward */
 }
 .about_area .about_me_box .infos p {
   color: var(--text-color);
   opacity: 0.7;
   letter-spacing: 0.3px;
   margin: 0;
+  transform: translateZ(1px); /* Text slightly forward */
 }
 .about_area .about_me_box .infos .about_btn {
   display: block;
@@ -760,12 +777,14 @@ a:hover {
   transition: 0.3s;
   /* ENHANCEMENT: Added drop shadow for button pop */
   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.1));
+  transform: translateZ(3px); /* Button pops out more */
 }
 .about_area .about_me_box:hover .infos .about_btn {
   opacity: 1;
-  /* ENHANCEMENT: Stronger shadow on hover with light green/blue glow */
-  filter: drop-shadow(0 0 8px rgba(0, 255, 127, 0.7)) /* Light Green */
-          drop-shadow(0 0 12px rgba(0, 200, 255, 0.5)); /* Light Blue */
+  /* Stronger shadow on hover with light green/blue glow */
+  filter: drop-shadow(0 0 10px rgba(0, 255, 127, 0.8)) /* Light Green */
+          drop-shadow(0 0 15px rgba(0, 200, 255, 0.6)); /* Light Blue */
+  transform: translateY(-2px) translateZ(4px); /* Lift and push forward */
 }
 .about_area .banner {
   padding: 17px 25px;
@@ -784,6 +803,7 @@ a:hover {
   will-change: transform;
   font-size: 12px;
   animation: marquee 5s linear infinite;
+  transform: translateZ(0.5px); /* Marquee text slightly forward */
 }
 .about_area .banner .marquee div span {
   font-size: 12px;
@@ -821,6 +841,7 @@ a:hover {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  transform: translateZ(-2px);
 }
 .about_area .info_box .infos h4 {
   color: var(--text-color);
@@ -834,14 +855,17 @@ a:hover {
   font-size: 20px;
   color: var(--white-color);
   font-weight: 500;
+  transform: translateZ(1px);
 }
 .about_area .info_box .about_btn {
   display: block;
   opacity: 0.2;
   transition: 0.3s;
+  transform: translateZ(3px);
 }
 .about_area .info_box:hover .about_btn {
   opacity: 1;
+  transform: translateY(-2px) translateZ(4px);
 }
 .about_area .info_box .icon_boxes {
   display: flex;
@@ -853,6 +877,7 @@ a:hover {
 }
 .about_area .info_box .icon_boxes img {
   width: 40px;
+  transform: translateZ(1px); /* Icons pop slightly */
 }
 .about_area .inner_profile_icons {
   display: flex;
@@ -861,9 +886,11 @@ a:hover {
   gap: 45px;
   padding: 22px;
   margin-bottom: 16px;
+  /* ENHANCEMENT: Perspective for the icon group */
+  perspective: 1000px;
 }
 
-/* ENHANCEMENT: STRONGER 3D/NEUMORPHIC ICONS */
+/* ENHANCEMENT: STRONGER 8D/GLOWING NEUMORPHIC ICONS */
 .about_area .inner_profile_icons a {
   text-decoration: none;
   width: 82px;
@@ -875,28 +902,40 @@ a:hover {
   position: relative;
   /* Stronger 3D lift for the circle buttons */
   box-shadow:
-    0 10px 30px -5px rgba(0, 0, 0, 0.5), /* Stronger main shadow */
-    inset 0 0 10px rgba(255, 255, 255, 0.2); /* Inner highlight */
-  border: 1px solid rgba(255, 255, 255, 0.2); /* Sharper border */
+    0 15px 40px -8px rgba(0, 0, 0, 0.7), /* Deeper main shadow */
+    inset 0 0 15px rgba(255, 255, 255, 0.3); /* Stronger inner highlight */
+  border: 1px solid rgba(255, 255, 255, 0.25); /* Sharper border */
   color: #fff;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smoother transition */
   flex: none;
   z-index: 1;
+  transform-style: preserve-3d;
+  transform: translateZ(5px); /* Initially pop out */
 }
 .about_area .inner_profile_icons a svg {
   width: 32px;
   height: 32px;
+  /* ENHANCEMENT: Glow for SVG icons */
+  filter: drop-shadow(0 0 3px rgba(0, 255, 127, 0.8)) /* Light Green */
+          drop-shadow(0 0 6px rgba(0, 200, 255, 0.6)); /* Light Blue */
+  transition: filter 0.3s ease;
+  transform: translateZ(1px); /* Icon slightly forward within the button */
 }
 .about_area .inner_profile_icons a:hover {
-  background: var(--white-color);
-  /* Simulating a "press" or "active" 3D state */
+  background: rgba(var(--white-color), 0.9); /* Slightly translucent white */
+  /* Simulating a "press" or "active" 3D state with strong glow */
   box-shadow:
-    0 2px 5px rgba(0, 0, 0, 0.6), /* Smaller shadow when 'pressed' */
-    inset 0 0 20px rgba(0, 0, 0, 0.5); /* Darker inner shadow */
-  transform: translateY(1px); /* Slight downward push */
+    0 5px 15px rgba(0, 0, 0, 0.9), /* Deeper pressed shadow */
+    inset 0 0 25px rgba(0, 0, 0, 0.6), /* Darker inner shadow */
+    0 0 20px rgba(0, 255, 127, 0.9), /* Intense Light Green outer glow */
+    0 0 30px rgba(0, 200, 255, 0.7); /* Intense Light Blue outer glow */
+  transform: translateY(2px) translateZ(8px) rotateX(2deg) rotateY(2deg); /* Pressed effect with rotation */
+  border-color: rgba(0, 255, 127, 0.8); /* Strong green border on hover */
 }
 .about_area .inner_profile_icons a:hover svg path {
   stroke: #000000;
+  /* ENHANCEMENT: Remove glow from icon path when hovered (becomes dark) */
+  filter: none;
 }
 
 /* Frosted Glass Background for Icons */
@@ -907,11 +946,12 @@ a:hover {
   height: 100%;
   border-radius: 50%;
   z-index: -1;
-  /* Stronger frost effect */
-  opacity: 0.2;
-  background: linear-gradient(120deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.2));
-  backdrop-filter: blur(15px); /* Stronger blur */
-  -webkit-backdrop-filter: blur(15px);
+  /* Stronger frost effect with light source */
+  opacity: 0.3;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+  backdrop-filter: blur(20px) saturate(180%); /* Stronger blur and saturation */
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  transform: translateZ(-1px); /* Push glass layer back */
 }
 .about_area .inner_profile_icons::before {
   opacity: 0.1;
@@ -930,6 +970,7 @@ a:hover {
   text-align: center;
   flex: 1;
   padding: 42px 30px 42px 30px;
+  transform: translateZ(1px); /* Client items pop slightly */
 }
 .about_area .about_client_box .clients .client_item h1 {
   color: var(--white-color);
@@ -982,9 +1023,16 @@ a:hover {
   font-weight: 500;
   color: #fff;
   margin: 0;
+  text-shadow:
+    0 0 10px rgba(0, 255, 127, 0.5), /* Light Green glow */
+    0 0 20px rgba(0, 200, 255, 0.3); /* Light Blue glow */
 }
 .about_area .about_contact_box h1 span {
   color: var(--primary-color);
+  /* ENHANCEMENT: Add glow to the primary color span as well */
+  text-shadow:
+    0 0 10px rgba(0, 255, 127, 0.8), /* Stronger Light Green glow */
+    0 0 20px rgba(0, 200, 255, 0.6); /* Stronger Light Blue glow */
 }
 .about_area .about_contact_box .about_btn {
   display: block;
@@ -1000,6 +1048,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   padding: 0 20px;
+  perspective: 1200px; /* Perspective for the whole section */
 }
 .fourohfour_section h1 {
   font-size: 150px;
@@ -1007,11 +1056,24 @@ a:hover {
   font-weight: 700;
   color: black;
   margin: 0;
-  /* ENHANCEMENT: Stronger 3D text effect */
+  /* ENHANCEMENT: Even stronger, multi-layered 3D text effect with glow */
   text-shadow:
-    -5px -5px 0 #fff, /* Top-left 'light' outline */
-    5px 5px 0 #000, /* Bottom-right 'shadow' outline */
-    10px 10px 20px #555; /* Deeper drop shadow for 3D depth */
+    -8px -8px 0 #fff, /* Top-left 'light' outline */
+    8px 8px 0 #000, /* Bottom-right 'shadow' outline */
+    15px 15px 30px rgba(85, 85, 85, 0.8), /* Deeper drop shadow */
+    0 0 20px rgba(0, 255, 127, 0.8), /* Intense Light Green glow */
+    0 0 35px rgba(0, 200, 255, 0.6); /* Intense Light Blue glow */
+  transform: translateZ(20px) rotateX(-5deg); /* Added a subtle 3D tilt */
+  transition: all 0.5s ease-in-out;
+}
+.fourohfour_section h1:hover {
+  transform: translateZ(25px) rotateX(-7deg) rotateY(2deg);
+  text-shadow:
+    -10px -10px 0 #fff,
+    10px 10px 0 #000,
+    20px 20px 40px rgba(85, 85, 85, 1),
+    0 0 30px rgba(0, 255, 127, 1), /* Stronger green glow */
+    0 0 50px rgba(0, 200, 255, 0.8); /* Stronger blue glow */
 }
 .fourohfour_section h6 {
   font-size: 160px;
@@ -1019,18 +1081,24 @@ a:hover {
   font-weight: 700;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
+  transform: translateZ(10px); /* Brings it slightly forward */
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Subtle white glow */
 }
 .fourohfour_section p {
   font-size: 20px;
   font-weight: 500;
+  transform: translateZ(5px); /* Brings it slightly forward */
 }
 #astronaut {
   width: 100%;
   max-width: 300px;
   margin-top: 20px;
-  animation: float 4s ease-in-out infinite; /* Smoother floating */
-  /* ENHANCEMENT: Added a shadow to the astronaut to 'lift' it off the background */
-  filter: drop-shadow(0 15px 10px rgba(0, 0, 0, 0.7));
+  animation: float 4s ease-in-out infinite; /* Smoother floating with rotation */
+  /* ENHANCEMENT: Added a more pronounced shadow to the astronaut for deeper lift */
+  filter: drop-shadow(0 20px 20px rgba(0, 0, 0, 0.8)) /* Main shadow */
+          drop-shadow(0 0 15px rgba(0, 255, 127, 0.5)); /* Subtle green glow */
+  transform-origin: center bottom; /* Rotate from the bottom */
+  transform: translateZ(25px); /* Astronaut really pops out */
 }
 
 a {
@@ -1097,6 +1165,10 @@ a:hover {
   .fourohfour_section h1 {
     font-size: 100px;
     margin-bottom: -20px;
+    transform: translateZ(15px) rotateX(-5deg);
+  }
+  .fourohfour_section h1:hover {
+    transform: translateZ(20px) rotateX(-7deg) rotateY(2deg);
   }
   .fourohfour_section h6 {
     font-size: 100px;
@@ -1135,6 +1207,9 @@ a:hover {
   }
   .fourohfour_section p {
     font-size: 16px;
+  }
+  #astronaut {
+    transform: translateZ(15px); /* Adjust astronaut depth for smaller screens */
   }
 }
 @media (max-width: 480px) {
@@ -1232,10 +1307,11 @@ a:hover {
   font-family: 'Adelia', sans-serif;
   color: #FFFFFF;
   text-align: center;
-  /* ENHANCEMENT: Text shadow for a subtle glow - Light Green/Light Blue */
+  /* ENHANCEMENT: More intense glow */
   text-shadow:
-    0 0 8px rgba(0, 255, 127, 0.7), /* Light Green glow */
-    0 0 15px rgba(0, 200, 255, 0.5); /* Light Blue glow, slightly wider */
+    0 0 10px rgba(0, 255, 127, 0.8), /* Strong Light Green glow */
+    0 0 25px rgba(0, 200, 255, 0.7), /* Strong Light Blue glow, wider */
+    0 0 40px rgba(0, 255, 127, 0.4); /* Faint outer green glow for depth */
 }
 
 .bg_text {
@@ -1249,6 +1325,9 @@ a:hover {
   align-items: center;
   justify-content: center;
   z-index: -1;
+  /* ENHANCEMENT: Subtle background text glow */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  transform: translateZ(-5px); /* Push background text far back */
 }
 
 .sign_text {
@@ -1257,8 +1336,10 @@ a:hover {
   margin-bottom: 25px; /* ENHANCEMENT: Increased margin */
   color: #FFFFFF;
   text-align: center;
-  /* ENHANCEMENT: Subtle glow - Light Green/Light Blue */
+  /* ENHANCEMENT: More intense glow */
   text-shadow:
-    0 0 10px rgba(0, 255, 127, 0.7), /* Light Green glow */
-    0 0 20px rgba(0, 200, 255, 0.5); /* Light Blue glow, slightly wider */
+    0 0 12px rgba(0, 255, 127, 0.9), /* Strong Light Green glow */
+    0 0 30px rgba(0, 200, 255, 0.8), /* Strong Light Blue glow, wider */
+    0 0 50px rgba(0, 255, 127, 0.5); /* Faint outer green glow for depth */
+  transform: translateZ(2px); /* Signature pops out a bit */
 }
