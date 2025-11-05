@@ -263,7 +263,7 @@ const WorkData = [
     image2: "https://i.ibb.co/BVs3zqt/employee2.jpg",
     image3: "https://i.ibb.co/qYyCRzr/employee3.jpg",
     image4: "https://i.ibb.co/D7DF0g1/employee4.jpg",
-    liveLink: "",
+    liveLink: "https://github.com/shubhcoding01/Employee-Task-Assigner",
     nextProject: "/work-details/ecommerce-management-system",
   },
 ];
