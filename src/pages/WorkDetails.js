@@ -158,7 +158,7 @@ const WorkData = [
     image2: "https://i.ibb.co/fSkb9kQ/ecommerce2.jpg",
     image3: "https://i.ibb.co/W5tR7LM/ecommerce3.jpg",
     image4: "https://i.ibb.co/ZmfrS7k/ecommerce4.jpg",
-    liveLink: "https://github.com/shubhcoding01/Ecommerce-Management-System",
+    liveLink: "https://github.com/shubhcoding01/ecomproject",
     nextProject: "/work-details/ai-pipeline-builder",
   },
   {
