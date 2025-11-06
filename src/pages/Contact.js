@@ -28,7 +28,7 @@ const Contact = () => {
   const [isSuccess, setIsSuccess] = useState(false);
   const [message, setMessage] = useState("");
 
-  const apiKey = "6783847e-44da-4de7-be7d-d89954c70617";
+const apiKey = process.env.REACT_APP_WEB3FORMS_ACCESS_KEY;
   const { submit: onSubmit } = useWeb3Forms({
     access_key: apiKey,
     settings: {
