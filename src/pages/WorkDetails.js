@@ -180,7 +180,7 @@ const WorkData = [
     image2: "https://i.ibb.co/qghNw3D/pipeline2.jpg",
     image3: "https://i.ibb.co/NsV2J6S/pipeline3.jpg",
     image4: "https://i.ibb.co/3v7ZpNb/pipeline4.jpg",
-    liveLink: "https://github.com/shubhcoding01/Pipeline-Builder",
+    liveLink: "https://github.com/shubhcoding01/Support-Ai-ChatBot",
     nextProject: "/work-details/wix-content-dashboard",
   },
   {
@@ -201,7 +201,7 @@ const WorkData = [
     image2: "https://i.ibb.co/BCLLkR3/wix2.jpg",
     image3: "https://i.ibb.co/5G7bbhp/wix3.jpg",
     image4: "https://i.ibb.co/sqMxn7t/wix4.jpg",
-    liveLink: "",
+    liveLink: "https://www.werprime.com/contentdashboard",
     nextProject: "/work-details/portfolio-redesign",
   },
   {
@@ -242,7 +242,7 @@ const WorkData = [
     image2: "https://i.ibb.co/njsdcqk/seller2.jpg",
     image3: "https://i.ibb.co/vDTR5kx/seller3.jpg",
     image4: "https://i.ibb.co/9T1pnhb/seller4.jpg",
-    liveLink: "",
+    liveLink: "https://github.com/shubhcoding01/ecommerce-seller",
     nextProject: "/work-details/employee-task-app",
   },
   {
