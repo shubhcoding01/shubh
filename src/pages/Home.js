@@ -47,26 +47,6 @@ const Home = () => {
                   <div className="banner shadow_box">
                     <div className="marquee">
                       <div>
-                        {/* <span>
-                          Your Vision + My Visuals =<b>$$$</b>
-                          <img decoding="async" src={starIcon} alt="Star" />
-                        </span>
-                        <span>
-                          Your Vision + My Visuals =<b>$$$</b>
-                          <img decoding="async" src={starIcon} alt="Star" />
-                        </span>
-                        <span>
-                          Your Vision + My Visuals =<b>$$$</b>
-                          <img decoding="async" src={starIcon} alt="Star" />
-                        </span>
-                        <span>
-                          Your Vision + My Visuals =<b>$$$</b>
-                          <img decoding="async" src={starIcon} alt="Star" />
-                        </span>
-                        <span>
-                          Your Vision + My Visuals =<b>$$$</b>
-                          <img decoding="async" src={starIcon} alt="Star" />
-                        </span> */}
                         <div className="flex flex-wrap justify-center items-center gap-4 text-lg md:text-xl font-semibold text-white tracking-wide">
   <span className="flex items-center gap-2">
     🧑‍💻 Code&nbsp;Secure&nbsp;+&nbsp;Build&nbsp;Smart&nbsp;=&nbsp;<b className="text-cyan-400">Trust</b>
