@@ -1,9 +1,9 @@
-import DevDisplay from "../../resources/images/work-data/DevDisplay/DevDisplayTHUMBNAIL.png";
-import DevDisplayBanner from "../../resources/images/work-data/DevDisplay/DevDisplayBANNER.png";
-import DevDisplay1 from "../../resources/images/work-data/DevDisplay/DevDisplay1.png";
-import DevDisplay2 from "../../resources/images/work-data/DevDisplay/DevDisplay2.png";
-import DevDisplay3 from "../../resources/images/work-data/DevDisplay/DevDisplay3.png";
-import DevDisplay4 from "../../resources/images/work-data/DevDisplay/DevDisplay4.png";
+import Ecommerce from "../../resources/images/work-data/EcommerceEcommerceTHUMBNAIL.png";
+import EcommerceBanner from "../../resources/images/work-data/EcommerceEcommerceC4.png";
+import Ecommerce1 from "../../resources/images/work-data/Ecommerce/EcommerceC1.png";
+import Ecommerce2 from "../../resources/images/work-data/Ecommerce/EcommerceC2.png";
+import Ecommerce3 from "../../resources/images/work-data/Ecommerce/EcommerceC4.png";
+import Ecommerce4 from "../../resources/images/work-data/Ecommerce/EcommerceC2.png";
 
 import uniqual from "../../resources/images/work-data/UNIQUAL/UNIQUALTHUMBNAIL.png";
 import uniqualBanner from "../../resources/images/work-data/UNIQUAL/UNIQUALBANNER.png";
