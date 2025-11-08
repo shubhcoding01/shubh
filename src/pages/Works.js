@@ -78,7 +78,7 @@ const WorkData = [
   {
     name: "Multi-Vendor E-Commerce Platform",
     slug: "ecommerce-management-system",
-    image: "https://i.ibb.co/9cWZ4Gy/ecommerce-platform.jpg",
+    image: "https://ibb.co/BSYRC5x/ecommerce-platform.jpg",
   },
   {
     name: "AI Pipeline Builder",
