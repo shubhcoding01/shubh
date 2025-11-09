@@ -299,12 +299,12 @@ import myPortfolio3 from "../../resources/images/work-data/my-portfolio/IMAGE3.p
 import myPortfolio4 from "../../resources/images/work-data/my-portfolio/IMAGE4.png";
 
 // Support-Ai-ChatBot
-import supportAiThumb from "../../resources/images/work-data/support-ai/THUMBNAIL.png";
-import supportAiBanner from "../../resources/images/work-data/support-ai/BANNER.png";
-import supportAi1 from "../../resources/images/work-data/support-ai/IMAGE1.png";
-import supportAi2 from "../../resources/images/work-data/support-ai/IMAGE2.png";
-import supportAi3 from "../../resources/images/work-data/support-ai/IMAGE3.png";
-import supportAi4 from "../../resources/images/work-data/support-ai/IMAGE4.png";
+import supportAiThumb from "../../resources/images/work-data/support-ai/support-aiTHUMBNAIL.png";
+import supportAiBanner from "../../resources/images/work-data/support-ai/support-aiBANNER.png";
+import supportAi1 from "../../resources/images/work-data/support-ai/support-ai1.png";
+import supportAi2 from "../../resources/images/work-data/support-ai/support-ai2.png";
+import supportAi3 from "../../resources/images/work-data/support-ai/support-ai3.png";
+import supportAi4 from "../../resources/images/work-data/support-ai/support-aiC4.png";
 
 // Employee-Task-Assigner
 import taskAssignerThumb from "../../resources/images/work-data/task-assigner/THUMBNAIL.png";
