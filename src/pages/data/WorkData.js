@@ -307,12 +307,12 @@ import supportAi3 from "../../resources/images/work-data/support-ai/support-ai3.
 import supportAi4 from "../../resources/images/work-data/support-ai/support-aiC4.png";
 
 // Employee-Task-Assigner
-import taskAssignerThumb from "../../resources/images/work-data/task-assigner/THUMBNAIL.png";
-import taskAssignerBanner from "../../resources/images/work-data/task-assigner/BANNER.png";
-import taskAssigner1 from "../../resources/images/work-data/task-assurer/IMAGE1.png";
-import taskAssigner2 from "../../resources/images/work-data/task-assigner/IMAGE2.png";
-import taskAssigner3 from "../../resources/images/work-data/task-assigner/IMAGE3.png";
-import taskAssigner4 from "../../resources/images/work-data/task-assigner/IMAGE4.png";
+import taskAssignerThumb from "../../resources/images/work-data/task-assigner/task-assignerTHUMBNAIL.png";
+import taskAssignerBanner from "../../resources/images/work-data/task-assigner/task-assignerBANNER.png";
+import taskAssigner1 from "../../resources/images/work-data/task-assurer/taskAssigner1.png";
+import taskAssigner2 from "../../resources/images/work-data/task-assigner/task-assigner2.png";
+import taskAssigner3 from "../../resources/images/work-data/task-assigner/task-assigner3.png";
+import taskAssigner4 from "../../resources/images/work-data/task-assigner/task-assigner4.png";
 
 // SccoffeeShop-code
 import sccoffeeShopThumb from "../../resources/images/work-data/sccoffee/THUMBNAIL.png";
