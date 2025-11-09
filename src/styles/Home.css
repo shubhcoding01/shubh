@@ -116,12 +116,21 @@
   border-radius: 20px;
   flex: none;
 }
-.about_area .about_me_box .img_box img {
+/* .about_area .about_me_box .img_box img {
   display: block;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
+} */
+ .about_area .about_me_box .img_box img {
+  display: block;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  /* CRITICAL FIX: Prioritize the top of the image (your face) when cropping */
+  object-position: top;
 }
 .about_area .about_me_box .infos {
   padding-top: 30px;
