@@ -431,7 +431,7 @@ const WorkData = [
     name: "ScCoffeeShop-code",
     title: "A Journey to the Perfect Cup",
     slug: "sccoffee-shop",
-    liveLink: "https://sccoffee-shop-code.vercel.app/", // <- FILL THIS IN
+    liveLink: "https://github.com/shubhcoding01/SccoffeeShop-code", // <- FILL THIS IN
     image1: sccoffeeShop1,
     image2: sccoffeeShop2,
     image3: sccoffeeShop3,
