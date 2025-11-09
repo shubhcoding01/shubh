@@ -275,12 +275,12 @@
 // IMPORTANT: Please ensure these file paths are correct in your project structure.
 
 // Ecommerce Project Imports (Assuming you want to keep this from the original imports)
-import Ecommerce from "../../resources/images/work-data/Ecommerce/EcommerceTHUMBNAIL.png";
-import EcommerceBanner from "../../resources/images/work-data/Ecommerce/EcommerceBANNER.png";
-import Ecommerce1 from "../../resources/images/work-data/Ecommerce/EcommerceC1.png";
-import Ecommerce2 from "../../resources/images/work-data/Ecommerce/EcommerceC2.png";
-import Ecommerce3 from "../../resources/images/work-data/Ecommerce/EcommerceC4.png";
-import Ecommerce4 from "../../resources/images/work-data/Ecommerce/EcommerceC2.png";
+import Ecommerce from "../../resources/images/work-data/ECommerce/EcommerceCTHUMBNAIL.png";
+import EcommerceBanner from "../../resources/images/work-data/ECommerce/EcommerceBANNER1.png";
+import Ecommerce1 from "../../resources/images/work-data/ECommerce/EcommerceC1.png";
+import Ecommerce3 from "../../resources/images/work-data/ECommerce/EcommerceC4.png";
+import Ecommerce4 from "../../resources/images/work-data/ECommerce/EcommerceC2.png";
+import Ecommerce2 from "../../resources/images/work-data/ECommerce/EcommerceC2.png";
 
 // Ingenious Prime
 import ingeniousPrimeThumb from "../../resources/images/work-data/ingenious-prime/ingenious-primeTHUMBNAIL.png"; // Placeholder path - Update path and image
@@ -309,18 +309,18 @@ import supportAi4 from "../../resources/images/work-data/support-ai/support-aiC4
 // Employee-Task-Assigner
 import taskAssignerThumb from "../../resources/images/work-data/task-assigner/task-assignerTHUMBNAIL.png";
 import taskAssignerBanner from "../../resources/images/work-data/task-assigner/task-assignerBANNER.png";
-import taskAssigner1 from "../../resources/images/work-data/task-assurer/taskAssigner1.png";
+import taskAssigner1 from "../../resources/images/work-data/task-assigner/task-assigner1.png";
 import taskAssigner2 from "../../resources/images/work-data/task-assigner/task-assigner2.png";
 import taskAssigner3 from "../../resources/images/work-data/task-assigner/task-assigner3.png";
 import taskAssigner4 from "../../resources/images/work-data/task-assigner/task-assigner4.png";
 
 // SccoffeeShop-code
-import sccoffeeShopThumb from "../../resources/images/work-data/sccoffee/THUMBNAIL.png";
-import sccoffeeShopBanner from "../../resources/images/work-data/sccoffee/BANNER.png";
-import sccoffeeShop1 from "../../resources/images/work-data/sccoffee/IMAGE1.png";
-import sccoffeeShop2 from "../../resources/images/work-data/sccoffee/IMAGE2.png";
-import sccoffeeShop3 from "../../resources/images/work-data/sccoffee/IMAGE3.png";
-import sccoffeeShop4 from "../../resources/images/work-data/sccoffee/IMAGE4.png";
+import sccoffeeShopThumb from "../../resources/images/work-data/sccoffee/sccoffeeTHUMBNAIL.png";
+import sccoffeeShopBanner from "../../resources/images/work-data/sccoffee/sccoffeeBANNER.png";
+import sccoffeeShop1 from "../../resources/images/work-data/sccoffee/sccoffee1.png";
+import sccoffeeShop2 from "../../resources/images/work-data/sccoffee/sccoffee2.png";
+import sccoffeeShop3 from "../../resources/images/work-data/sccoffee/sccoffee3.png";
+import sccoffeeShop4 from "../../resources/images/work-data/sccoffee/sccoffee4.png";
 
 
 const WorkData = [
