@@ -276,27 +276,27 @@
 
 // Ecommerce Project Imports (Assuming you want to keep this from the original imports)
 import Ecommerce from "../../resources/images/work-data/Ecommerce/EcommerceTHUMBNAIL.png";
-import EcommerceBanner from "../../resources/images/work-data/Ecommerce/EcommerceC4.png";
+import EcommerceBanner from "../../resources/images/work-data/Ecommerce/EcommerceBANNER.png";
 import Ecommerce1 from "../../resources/images/work-data/Ecommerce/EcommerceC1.png";
 import Ecommerce2 from "../../resources/images/work-data/Ecommerce/EcommerceC2.png";
 import Ecommerce3 from "../../resources/images/work-data/Ecommerce/EcommerceC4.png";
 import Ecommerce4 from "../../resources/images/work-data/Ecommerce/EcommerceC2.png";
 
 // Ingenious Prime
-import ingeniousPrimeThumb from "../../resources/images/work-data/ingenious-prime/THUMBNAIL.png"; // Placeholder path - Update path and image
-import ingeniousPrimeBanner from "../../resources/images/work-data/ingenious-prime/BANNER.png"; // Placeholder path - Update path and image
-import ingeniousPrime1 from "../../resources/images/work-data/ingenious-prime/IMAGE1.png"; // Placeholder path - Update path and image
-import ingeniousPrime2 from "../../resources/images/work-data/ingenious-prime/IMAGE2.png"; // Placeholder path - Update path and image
-import ingeniousPrime3 from "../../resources/images/work-data/ingenious-prime/IMAGE3.png"; // Placeholder path - Update path and image
-import ingeniousPrime4 from "../../resources/images/work-data/ingenious-prime/IMAGE4.png"; // Placeholder path - Update path and image
+import ingeniousPrimeThumb from "../../resources/images/work-data/ingenious-prime/ingenious-primeTHUMBNAIL.png"; // Placeholder path - Update path and image
+import ingeniousPrimeBanner from "../../resources/images/work-data/ingenious-prime/ingenious-primeBANNER.png"; // Placeholder path - Update path and image
+import ingeniousPrime1 from "../../resources/images/work-data/ingenious-prime/ingenious-prime1.png"; // Placeholder path - Update path and image
+import ingeniousPrime2 from "../../resources/images/work-data/ingenious-prime/ingenious-prime2.png"; // Placeholder path - Update path and image
+import ingeniousPrime3 from "../../resources/images/work-data/ingenious-prime/ingenious-prime3.png"; // Placeholder path - Update path and image
+import ingeniousPrime4 from "../../resources/images/work-data/ingenious-prime/ingenious-prime4.png"; // Placeholder path - Update path and image
 
 // MY-Portfolio
-import myPortfolioThumb from "../../resources/images/work-data/my-portfolio/THUMBNAIL.png";
-import myPortfolioBanner from "../../resources/images/work-data/my-portfolio/BANNER.png";
-import myPortfolio1 from "../../resources/images/work-data/my-portfolio/IMAGE1.png";
-import myPortfolio2 from "../../resources/images/work-data/my-portfolio/IMAGE2.png";
-import myPortfolio3 from "../../resources/images/work-data/my-portfolio/IMAGE3.png";
-import myPortfolio4 from "../../resources/images/work-data/my-portfolio/IMAGE4.png";
+import myPortfolioThumb from "../../resources/images/work-data/my-portfolio/my-portfolioTHUMBNAIL.png";
+import myPortfolioBanner from "../../resources/images/work-data/my-portfolio/my-portfolioBANNER.png";
+import myPortfolio1 from "../../resources/images/work-data/my-portfolio/my-portfolio1.png";
+import myPortfolio2 from "../../resources/images/work-data/my-portfolio/my-portfolio2.png";
+import myPortfolio3 from "../../resources/images/work-data/my-portfolio/my-portfolio1.png";
+import myPortfolio4 from "../../resources/images/work-data/my-portfolio/my-portfolio4.png";
 
 // Support-Ai-ChatBot
 import supportAiThumb from "../../resources/images/work-data/support-ai/support-aiTHUMBNAIL.png";
