@@ -332,7 +332,7 @@ const WorkData = [
     name: "E-commerce Platform",
     title: "Full-Stack Online Store",
     slug: "ecommerce-platform",
-    liveLink: "", // <- FILL THIS IN
+    liveLink: "https://github.com/shubhcoding01/ecomproject", // <- FILL THIS IN
     image1: Ecommerce1,
     image2: Ecommerce2,
     image3: Ecommerce3,
