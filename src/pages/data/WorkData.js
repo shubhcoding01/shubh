@@ -275,8 +275,8 @@
 // IMPORTANT: Please ensure these file paths are correct in your project structure.
 
 // Ecommerce Project Imports (Assuming you want to keep this from the original imports)
-import Ecommerce from "../../resources/images/work-data/EcommerceEcommerceTHUMBNAIL.png";
-import EcommerceBanner from "../../resources/images/work-data/EcommerceEcommerceC4.png";
+import Ecommerce from "../../resources/images/work-data/Ecommerce/EcommerceTHUMBNAIL.png";
+import EcommerceBanner from "../../resources/images/work-data/Ecommerce/EcommerceC4.png";
 import Ecommerce1 from "../../resources/images/work-data/Ecommerce/EcommerceC1.png";
 import Ecommerce2 from "../../resources/images/work-data/Ecommerce/EcommerceC2.png";
 import Ecommerce3 from "../../resources/images/work-data/Ecommerce/EcommerceC4.png";
