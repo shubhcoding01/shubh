@@ -393,7 +393,7 @@ const WorkData = [
     name: "Support-Ai ChatBot",
     title: "Ask Anything, Get Answers",
     slug: "support-ai-chatbot",
-    liveLink: "YOUR SUPPORT-AI LIVE LINK", // <- FILL THIS IN
+    liveLink: "https://support-ai-chat-bot.vercel.app/", // <- FILL THIS IN
     image1: supportAi1,
     image2: supportAi2,
     image3: supportAi3,
