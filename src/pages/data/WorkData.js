@@ -332,7 +332,7 @@ const WorkData = [
     name: "E-commerce Platform",
     title: "Full-Stack Online Store",
     slug: "ecommerce-platform",
-    liveLink: "YOUR E-COMMERCE LIVE LINK", // <- FILL THIS IN
+    liveLink: "", // <- FILL THIS IN
     image1: Ecommerce1,
     image2: Ecommerce2,
     image3: Ecommerce3,
@@ -412,7 +412,7 @@ const WorkData = [
     name: "Employee Task Assigner",
     title: "Efficient Task Management for Teams",
     slug: "employee-task-assigner",
-    liveLink: "YOUR TASK ASSIGNER LIVE LINK", // <- FILL THIS IN
+    liveLink: "https://employee-task-assigner-ten.vercel.app/", // <- FILL THIS IN
     image1: taskAssigner1,
     image2: taskAssigner2,
     image3: taskAssigner3,
