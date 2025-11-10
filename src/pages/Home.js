@@ -34,7 +34,7 @@ const Home = () => {
                 <div className="infos">
                   <h4>Web Developer</h4>
                   <h1>Shubham Raj</h1>
-                  <p>Designing & developing web apps with a mind full of fucking obsessed creativity.</p>
+                  <p>Crafting AI-powered and secure web apps with a passion for innovation, precision, and creativity.</p>
                   <Link href="#" className="about_btn">
                     <img src={nextIcon} alt="Button" />
                   </Link>
@@ -48,31 +48,31 @@ const Home = () => {
                     <div className="marquee">
                       <div>
                         <div className="flex flex-wrap justify-center items-center gap-4 text-lg md:text-xl font-semibold text-white tracking-wide">
-  <span className="flex items-center gap-2">
-    🧑‍💻 Code&nbsp;Secure&nbsp;+&nbsp;Build&nbsp;Smart&nbsp;=&nbsp;<b className="text-cyan-400">Trust</b>
-    <img decoding="async" src={starIcon} alt="Star" className="w-5 h-5 animate-pulse" />
-  </span>
+                        <span className="flex items-center gap-2">
+                          🧑‍💻 Code&nbsp;Secure&nbsp;+&nbsp;Build&nbsp;Smart&nbsp;=&nbsp;<b className="text-cyan-400">Trust</b>
+                          <img decoding="async" src={starIcon} alt="Star" className="w-5 h-5 animate-pulse" />
+                        </span>
 
-  <span className="flex items-center gap-2">
-    🔒 Create&nbsp;+&nbsp;Protect&nbsp;=&nbsp;<b className="text-emerald-400">Confidence</b>
-    <img decoding="async" src={starIcon} alt="Star" className="w-5 h-5 animate-spin-slow" />
-  </span>
+                        <span className="flex items-center gap-2">
+                          🔒 Create&nbsp;+&nbsp;Protect&nbsp;=&nbsp;<b className="text-emerald-400">Confidence</b>
+                          <img decoding="async" src={starIcon} alt="Star" className="w-5 h-5 animate-spin-slow" />
+                        </span>
 
-  <span className="flex items-center gap-2">
-    💡 Innovation&nbsp;+&nbsp;Security&nbsp;=&nbsp;<b className="text-yellow-400">Excellence</b>
-    <img decoding="async" src={starIcon} alt="Star" className="w-5 h-5 animate-bounce" />
-  </span>
+                        <span className="flex items-center gap-2">
+                          💡 Innovation&nbsp;+&nbsp;Security&nbsp;=&nbsp;<b className="text-yellow-400">Excellence</b>
+                          <img decoding="async" src={starIcon} alt="Star" className="w-5 h-5 animate-bounce" />
+                        </span>
 
-  <span className="flex items-center gap-2">
-    🛡️ Developer&nbsp;+&nbsp;Defender&nbsp;=&nbsp;<b className="text-purple-400">Next&nbsp;Gen</b>
-    <img decoding="async" src={starIcon} alt="Star" className="w-5 h-5 animate-pulse" />
-  </span>
+                        <span className="flex items-center gap-2">
+                          🛡️ Developer&nbsp;+&nbsp;Defender&nbsp;=&nbsp;<b className="text-purple-400">Next&nbsp;Gen</b>
+                          <img decoding="async" src={starIcon} alt="Star" className="w-5 h-5 animate-pulse" />
+                        </span>
 
-  <span className="flex items-center gap-2">
-    ⚙️ Build&nbsp;Fast&nbsp;+&nbsp;Stay&nbsp;Secure&nbsp;=&nbsp;<b className="text-rose-400">Win</b>
-    <img decoding="async" src={starIcon} alt="Star" className="w-5 h-5 animate-spin-slow" />
-  </span>
-</div>
+                        <span className="flex items-center gap-2">
+                          ⚙️ Build&nbsp;Fast&nbsp;+&nbsp;Stay&nbsp;Secure&nbsp;=&nbsp;<b className="text-rose-400">Win</b>
+                          <img decoding="async" src={starIcon} alt="Star" className="w-5 h-5 animate-spin-slow" />
+                        </span>
+                      </div>
 
                       </div>
                     </div>
