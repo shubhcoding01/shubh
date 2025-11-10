@@ -3,17 +3,17 @@
   "name": "Shubham Raj Portfolio",
   "icons": [
     {
-      "src": "sshubhuicon.png",
+      "src": "sshubh/sshubhuicon.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "sshubhulogo.png",
+      "src": "sshubh/sshubhulogo.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "sshubhulogo.png",
+      "src": "sshubh/sshubhulogo.png",
       "type": "image/png",
       "sizes": "512x512"
     }
