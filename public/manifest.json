@@ -1,19 +1,19 @@
 {
-  "short_name": "aashuu",
-  "name": "Ashutosh Kumar Portfolio",
+  "short_name": "shubh",
+  "name": "Shubham Raj Portfolio",
   "icons": [
     {
-      "src": "aashuulogo.png",
+      "src": "sshubhuicon.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "aashuulogo.png",
+      "src": "sshubhulogo.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "aashuulogo.png",
+      "src": "sshubhulogo.png",
       "type": "image/png",
       "sizes": "512x512"
     }
