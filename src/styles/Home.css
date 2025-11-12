@@ -248,6 +248,10 @@
 }
 .about_area .info_box:hover .about_btn {
   opacity: 1;
+    /* Apply the desired light green/blue glow filter */
+  filter: drop-shadow(0 0 8px rgba(0, 255, 127, 0.7)) /* Light Green */
+          drop-shadow(0 0 12px rgba(0, 200, 255, 0.5)); /* Light Blue */
+
 }
 .about_area .info_box .icon_boxes {
   display: flex;
@@ -257,6 +261,7 @@
   margin-bottom: 56px;
   margin-top: 46px;
 }
+
 .about_area .info_box .icon_boxes img {
   width: 40px;
 }
