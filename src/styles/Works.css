@@ -132,6 +132,9 @@
 }
 .project_area .project_item:hover .project_btn {
   opacity: 1;
+    /* ENHANCEMENT: Stronger shadow on hover with light green/blue glow */
+  filter: drop-shadow(0 0 8px rgba(4, 255, 0)) /* Light Green */
+          drop-shadow(0 0 12px rgba(0, 200, 255, 0.5)); /* Light Blue */
 }
 
 @media (max-width: 1090px) {
