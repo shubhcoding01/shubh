@@ -238,8 +238,11 @@
   border-radius: 12px;
 }
 .project_details_wrap .big_btn:hover {
-  background: #ffffff;
-  color: #0F0F0F;
+  /* background: #ffffff;
+  color: #0F0F0F; */
+    /* ENHANCEMENT: Stronger shadow on hover with light green/blue glow */
+  filter: drop-shadow(0 0 8px rgba(4, 255, 0)) /* Light Green */
+          drop-shadow(0 0 12px rgba(0, 200, 255, 0.5)); /* Light Blue */
 }
 
 @media (max-width: 1680px) {
