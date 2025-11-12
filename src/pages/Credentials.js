@@ -402,7 +402,7 @@ const Credentials = () => {
                     <img src={Shubh} alt="About Me" />
                   </div>
                   <h2>Shubham Raj</h2>
-                  <p>@shubh</p>
+                  <p>@sshubh</p>
                   <ul className="social_links d-flex justify-content-center">
                     <li>
                       <Link
