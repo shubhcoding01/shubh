@@ -170,7 +170,7 @@
 .about_area .about_me_box:hover .infos .about_btn {
   opacity: 1;
   /* ENHANCEMENT: Stronger shadow on hover with light green/blue glow */
-  filter: drop-shadow(0 0 8px rgba(0, 255, 127, 0.7)) /* Light Green */
+  filter: drop-shadow(0 0 8px rgba(4, 255, 0)) /* Light Green */
           drop-shadow(0 0 12px rgba(0, 200, 255, 0.5)); /* Light Blue */
 }
 .about_area .banner {
@@ -247,9 +247,9 @@
   transition: 0.3s;
 }
 .about_area .info_box:hover .about_btn {
-  opacity: 1;
+  opacity: 5;
     /* Apply the desired light green/blue glow filter */
-  filter: drop-shadow(0 0 8px rgba(0, 255, 127, 0.7)) /* Light Green */
+  filter: drop-shadow(0 0 8px rgba(4, 255, 0)) /* Light Green */
           drop-shadow(0 0 12px rgba(0, 200, 255, 0.5)); /* Light Blue */
 
 }
@@ -645,7 +645,7 @@ a:hover {
   text-align: center;
   /* ENHANCEMENT: Text shadow for a subtle glow - Light Green/Light Blue */
   text-shadow:
-    0 0 8px rgba(0, 255, 127, 0.7), /* Light Green glow */
+    0 0 8px rgb(4, 255, 0), /* Light Green glow */
     0 0 15px rgba(0, 200, 255, 0.5); /* Light Blue glow, slightly wider */
 }
 
@@ -670,6 +670,6 @@ a:hover {
   text-align: center;
   /* ENHANCEMENT: Subtle glow - Light Green/Light Blue */
   text-shadow:
-    0 0 10px rgba(0, 255, 127, 0.7), /* Light Green glow */
+    0 0 10px rgba(4, 255, 0), /* Light Green glow */
     0 0 20px rgba(0, 200, 255, 0.5); /* Light Blue glow, slightly wider */
 }
