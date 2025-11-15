@@ -55,7 +55,7 @@ const apiKey = process.env.REACT_APP_WEB3FORMS_ACCESS_KEY;
   return (
     <>
       <Helmet>
-        <title>Contact | {process.env.REACT_APP_APP_NAME}</title>
+        <title>Contact | {process.env.REACT_APP_APP_NAME || "Portfolio"}</title>
       </Helmet>
       <Navbar />
       <section className="contact_area">
