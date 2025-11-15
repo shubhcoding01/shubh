@@ -56,9 +56,11 @@
 }
 .header_area .navbar .menu li a.active {
   color: var(--white-color);
+  
 }
 .header_area .navbar .theme_btn {
   display: none;
+  
 }
 .header_area .show_menu {
   display: none;
