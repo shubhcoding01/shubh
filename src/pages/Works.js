@@ -13,7 +13,7 @@ const Works = () => {
   return (
     <>
       <Helmet>
-        <title>Work | {process.env.REACT_APP_APP_NAME}</title>
+        <title>Work | {process.env.REACT_APP_APP_NAME || "Portfolio"}</title>
       </Helmet>
 
       <Navbar />
