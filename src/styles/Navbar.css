@@ -21,7 +21,11 @@
   margin: 0;
 }
 .header_area .logo img {
-  width: 40px;
+  width: 60px;
+    opacity: 1;
+  /* ENHANCEMENT: Stronger shadow on hover with light green/blue glow */
+  filter: drop-shadow(0 0 8px rgba(4, 255, 0)) /* Light Green */
+          drop-shadow(0 0 12px rgba(0, 200, 255, 0.5)); /* Light Blue */
 }
 .header_area .navbar {
   margin: 0;
@@ -45,6 +49,10 @@
 }
 .header_area .navbar .menu li a:hover {
   color: var(--white-color);
+    opacity: 1;
+  /* ENHANCEMENT: Stronger shadow on hover with light green/blue glow */
+  filter: drop-shadow(0 0 8px rgba(4, 255, 0)) /* Light Green */
+          drop-shadow(0 0 12px rgba(0, 200, 255, 0.5)); /* Light Blue */
 }
 .header_area .navbar .menu li a.active {
   color: var(--white-color);
