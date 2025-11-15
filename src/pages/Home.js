@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Shubham Raj Portfolio</title>
+        <title>Shubham Raj | Portfolio</title>
       </Helmet>
       <Navbar/>
       <section className="about_area">

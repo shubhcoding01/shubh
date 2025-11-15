@@ -19,7 +19,7 @@ const MoreAboutMe = () => {
         <>
             <Helmet>
                 <title>
-                    About | {process.env.REACT_APP_APP_NAME}
+                    About | {process.env.REACT_APP_APP_NAME || "Portfolio"}
                 </title>
             </Helmet>
             <Navbar />
