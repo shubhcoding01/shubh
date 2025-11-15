@@ -22,7 +22,11 @@
   margin: 0;
 }
 .footer_area .footer_logo img {
-  width: 40px;
+  width: 60px;
+    opacity: 1;
+  /* ENHANCEMENT: Stronger shadow on hover with light green/blue glow */
+    filter: drop-shadow(0 0 8px rgba(4, 255, 0)) /* Light Green */
+          drop-shadow(0 0 12px rgba(0, 200, 255, 0.5)); /* Light Blue */
 }
 .footer_area .footer_menu {
   margin: 33px 0 37px 0;
@@ -44,6 +48,10 @@
 }
 .footer_area .footer_menu li a:hover {
   color: var(--white-color);
+    opacity: 1;
+  /* ENHANCEMENT: Stronger shadow on hover with light green/blue glow */
+  filter: drop-shadow(0 0 8px rgba(4, 255, 0)) /* Light Green */
+          drop-shadow(0 0 12px rgba(0, 200, 255, 0.5)); /* Light Blue */
 }
 .footer_area .copyright {
   margin: 0;
