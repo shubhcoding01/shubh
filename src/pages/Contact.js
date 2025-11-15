@@ -194,6 +194,47 @@ const apiKey = process.env.REACT_APP_WEB3FORMS_ACCESS_KEY;
                     </svg>
                   </Link>
                 </li>
+                {/* 🌟 NEW INSTAGRAM LINK 🌟 */}
+                <li>
+                  <Link
+                    className="shadow_box"
+                    to="https://www.instagram.com/shubh1.yadav" // ⬅️ **CHANGE THIS URL**
+                    target="_blank"
+                  >
+                    <svg
+                      width="16px"
+                      height="16px"
+                      strokeWidth="1.6"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      color="#FFFFFF"
+                    >
+                      <path
+                        d="M12 16a4 4 0 100-8 4 4 0 000 8z"
+                        stroke="#FFFFFF"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></path>
+                      <path
+                        d="M3 15V9a6 6 0 016-6h6a6 6 0 016 6v6a6 6 0 01-6 6H9a6 6 0 01-6-6z"
+                        stroke="#FFFFFF"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></path>
+                      <path
+                        d="M17.5 6.51L17.51 6.49"
+                        stroke="#FFFFFF"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></path>
+                    </svg>
+                  </Link>
+                </li>
+                {/* ------------------------- */}
               </ul>
             </div>
             <div className="col-lg-7 contact_form" data-aos="zoom-in">
