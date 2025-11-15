@@ -387,7 +387,7 @@ const Credentials = () => {
   return (
     <>
       <Helmet>
-        <title>About | {process.env.REACT_APP_APP_NAME}</title>
+        <title>About | {process.env.REACT_APP_APP_NAME || "Portfolio"}</title>
       </Helmet>
       <Navbar />
       <section className="credential_area">
