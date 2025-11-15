@@ -148,7 +148,7 @@ const Service = () => {
     return (
         <>
             <Helmet>
-                <title>Services | {process.env.REACT_APP_APP_NAME}</title>
+                <title>Services | {process.env.REACT_APP_APP_NAME || "Portfolio"}</title>
             </Helmet>
             <Navbar />
             <section className="service_area">

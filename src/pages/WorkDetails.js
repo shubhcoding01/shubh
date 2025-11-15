@@ -35,7 +35,7 @@ const WorkDetails = () => {
   return (
     <>
       <Helmet>
-        <title>Work Detail | {process.env.REACT_APP_APP_NAME}</title>
+        <title>Work Detail | {process.env.REACT_APP_APP_NAME || "Portfolio"}</title>
       </Helmet>
 
       <Navbar />
