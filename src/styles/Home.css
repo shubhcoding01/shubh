@@ -35,6 +35,10 @@
     0 10px 80px rgba(0, 0, 0, 0.6), /* Slightly larger, darker shadow on hover */
     inset 0 0 20px rgba(255, 255, 255, 0.1);
   transform: translateY(-2px); /* Slight lift */
+    opacity: 1;
+  /* ENHANCEMENT: Stronger shadow on hover with light green/blue glow */
+  filter: drop-shadow(0 0 8px rgba(4, 255, 0, 0.601)) /* Light Green */
+          drop-shadow(0 0 12px rgba(0, 200, 255, 0.5)); /* Light Blue */
 }
 
 /* Inner highlight/bevel for 3D look */
@@ -305,6 +309,10 @@
     0 2px 5px rgba(0, 0, 0, 0.6), /* Smaller shadow when 'pressed' */
     inset 0 0 20px rgba(0, 0, 0, 0.5); /* Darker inner shadow */
   transform: translateY(1px); /* Slight downward push */
+    opacity: 1;
+  /* ENHANCEMENT: Stronger shadow on hover with light green/blue glow */
+  filter: drop-shadow(0 0 8px rgba(4, 255, 0)) /* Light Green */
+          drop-shadow(0 0 12px rgba(0, 200, 255, 0.5)); /* Light Blue */
 }
 .about_area .inner_profile_icons a:hover svg path {
   stroke: #000000;
