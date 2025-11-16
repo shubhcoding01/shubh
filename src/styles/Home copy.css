@@ -1,12 +1,8 @@
-/* ---------------------------
-   Home.css — cleaned & fixed
-   --------------------------- */
-
-/* Animations */
 @keyframes marquee {
   0% {
     transform: translateX(0);
   }
+  /* Adjusted for a potentially cleaner loop */
   100% {
     transform: translateX(-100%);
   }
@@ -21,31 +17,45 @@
   }
 }
 
-/* --- ENHANCED 3D/GLASSMORPHISM BASE --- */
+/* --- ADVANCED 3D/NEUMORPHIC ENHANCEMENTS START --- */
+
+/* --- ENHANCED 3D/GLASSPHORISM BASE (MODIFIED) --- */
 .shadow_box {
   position: relative;
   border-radius: 30px;
   background: #0F0F0F;
-  /* ENHANCEMENT: Added a subtle 3D lift with a box shadow and inner glow */
+  /* ENHANCEMENT: Intensified 3D Lift with multi-layered box-shadow */
   box-shadow:
-    0 4px 60px rgba(0, 0, 0, 0.4), /* Stronger ambient shadow for lift */
-    inset 0 0 15px rgba(255, 255, 255, 0.05); /* Subtle inner glow from light source */
-  transition: all 0.4s ease; /* Added transition for hover effect */
+    /* Deep ambient shadow for lift */
+    0 10px 40px rgba(0, 0, 0, 0.7),
+    /* Subtle outer ring glow (integrated soft light) */
+    0 0 15px rgba(4, 255, 0, 0.05),
+    /* Inner dark shadow for concavity/depth */
+    inset 0 0 20px rgba(0, 0, 0, 0.5),
+    /* Inner light highlight */
+    inset 2px 2px 10px rgba(255, 255, 255, 0.08);
+
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smoother, more dramatic transition */
 }
 
 .shadow_box:hover {
-  /* Subtle change on hover to simulate interaction */
+  /* Hyper-3D effect on hover */
   box-shadow:
-    0 10px 80px rgba(0, 0, 0, 0.6), /* Slightly larger, darker shadow on hover */
-    inset 0 0 20px rgba(255, 255, 255, 0.1);
-  transform: translateY(-2px); /* Slight lift */
+    /* Dramatic lift shadow */
+    0 20px 100px rgba(0, 0, 0, 0.8),
+    /* Integrated bright glow (Light Green) */
+    0 0 20px rgba(4, 255, 0, 0.4),
+    /* Integrated bright glow (Light Blue) */
+    0 0 30px rgba(0, 200, 255, 0.3),
+    /* Inner dark shadow is slightly lessened */
+    inset 0 0 10px rgba(0, 0, 0, 0.4);
+
+  transform: translateY(-5px) scale(1.01); /* More pronounced lift and slight scale */
+  filter: none; /* Removed filter to rely on integrated box-shadow glow */
   opacity: 1;
-  /* ENHANCEMENT: Stronger shadow on hover with light green/blue glow */
-  filter: drop-shadow(0 0 8px rgba(4, 255, 0, 0.60)) /* Light Green */
-          drop-shadow(0 0 12px rgba(0, 200, 255, 0.5)); /* Light Blue */
 }
 
-/* Inner highlight/bevel for 3D look */
+/* Inner highlight/bevel for 3D look (MODIFIED) */
 .shadow_box::before {
   content: "";
   position: absolute;
@@ -54,14 +64,19 @@
   width: 100%;
   height: 100%;
   z-index: 1;
-  /* ENHANCEMENT: Adjusted gradient for a more pronounced light source (stronger opacity) */
-  background: linear-gradient(120deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.08));
+  /* ENHANCEMENT: Stronger, more focused light source/specular highlight */
+  background: radial-gradient(circle at 10% 10%, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.08) 50%);
   border-radius: 30px;
-  opacity: 0.3; /* Increased opacity for more shine */
+  opacity: 0.4; /* Stronger shine */
   pointer-events: none;
+  transition: opacity 0.5s ease;
 }
 
-/* Border/Outer Glow */
+.shadow_box:hover::before {
+    opacity: 0.5; /* Highlight brightens on hover */
+}
+
+/* Border/Outer Glow (MODIFIED - Now primarily a faint white border) */
 .shadow_box::after {
   content: "";
   position: absolute;
@@ -69,11 +84,12 @@
   right: 0;
   bottom: 0;
   left: 0;
-  /* ENHANCEMENT: Stronger border glow */
-  background: linear-gradient(120deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.02));
-  z-index: -1;
+  /* ENHANCEMENT: Sharp white edge for definition/light catch */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 0; /* Changed to 0 so it's between -1 and 1 */
   border-radius: 30px;
-  margin: -2px; /* Increased margin for a thicker outer "border" glow */
+  margin: 0; /* Removed margin */
+  pointer-events: none;
 }
 
 .shadow_box * {
@@ -84,49 +100,7 @@
 /* --- ABOUT AREA STYLES --- */
 .about_area {
   padding-top: 80px;
-  position: relative; /* MANDATORY for positioning the pseudo-element */
-  z-index: 1; /* Ensures content is above the background text */
-  overflow: hidden; /* Contains the huge background text */
 }
-
-/* --- SSHUBH 3D BACKGROUND TEXT EFFECT --- */
-body::before {
-  content: "SSHUBH";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  /* Use the custom 'Adelia' font for a unique style */
-  font-family: 'Adelia', cursive;
-  /* Apply 3D rotation and translation for depth */
-  transform: translate(-50%, -50%) rotateX(65deg) rotateZ(10deg);
-
-  /* Size and Opacity for subtle background */
-  font-size: 35vw; /* HUGE size relative to viewport width */
-  font-weight: normal;
-  color: rgba(255, 255, 255, 0.03); /* Very low opacity for subtle ghost effect */
-  pointer-events: none;
-  z-index: -1; /* CRUCIAL: Place behind all other content */
-  white-space: nowrap;
-  letter-spacing: -3vw; /* Tighten up letters */
-
-  /* Subtle 3D shadow effect using glow colors */
-  text-shadow:
-    0 0 10px rgba(4, 255, 0, 0.1), /* Light Green glow */
-    0 0 20px rgba(0, 200, 255, 0.05), /* Light Blue glow */
-    4px 4px 10px rgba(0, 0, 0, 0.3); /* Offset shadow for depth */
-}
-
-/* Media Query adjustment for smaller screens */
-@media (max-width: 768px) {
-  .about_area::before {
-    font-size: 55vw;
-    letter-spacing: -5vw;
-    /* Remove 3D tilt on mobile for better fit/readability */
-    transform: translate(-50%, -50%) rotateX(0deg) rotateZ(0deg);
-  }
-}
-
-/* about_me_box */
 .about_area .about_me_box {
   position: relative;
   padding: 40px 40px;
@@ -137,7 +111,6 @@ body::before {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
-
 .about_area .about_me_box .overlay_link {
   left: 0;
   top: 0;
@@ -148,7 +121,6 @@ body::before {
   position: absolute;
   z-index: 9;
 }
-
 .about_area .about_me_box .bg_img {
   opacity: 0.1;
   position: absolute;
@@ -160,7 +132,6 @@ body::before {
   -o-object-fit: cover;
   object-fit: cover;
 }
-
 .about_area .about_me_box .img_box {
   width: 224px;
   height: 224px;
@@ -169,7 +140,6 @@ body::before {
   border-radius: 20px;
   flex: none;
 }
-
 .about_area .about_me_box .img_box img {
   display: block;
   height: 100%;
@@ -179,12 +149,10 @@ body::before {
   /* CRITICAL FIX: Prioritize the top of the image (your face) when cropping */
   object-position: top;
 }
-
 .about_area .about_me_box .infos {
   padding-top: 30px;
   position: initial;
 }
-
 .about_area .about_me_box .infos h4 {
   color: var(--text-color);
   opacity: 0.7;
@@ -193,7 +161,6 @@ body::before {
   letter-spacing: 0.3px;
   margin-bottom: 5px;
 }
-
 .about_area .about_me_box .infos h1 {
   font-size: 36px;
   line-height: 40px;
@@ -201,7 +168,6 @@ body::before {
   font-weight: 500;
   margin-bottom: 12px;
 }
-
 .about_area .about_me_box .infos p {
   color: var(--text-color);
   opacity: 0.7;
@@ -209,30 +175,31 @@ body::before {
   margin: 0;
 }
 
+/* --- ABOUT BUTTON (MODIFIED) --- */
 .about_area .about_me_box .infos .about_btn {
   display: block;
   position: absolute;
   right: 30px;
   bottom: 30px;
   opacity: 0.2;
-  transition: 0.3s;
-  /* ENHANCEMENT: Added drop shadow for button pop */
-  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.1));
+  transition: opacity 0.3s, box-shadow 0.3s;
+  /* Added a distinct resting shadow */
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.8));
 }
 
 .about_area .about_me_box:hover .infos .about_btn {
   opacity: 1;
-  /* ENHANCEMENT: Stronger shadow on hover with light green/blue glow */
-  filter: drop-shadow(0 0 8px rgba(4, 255, 0, 0.6)) /* Light Green */
-          drop-shadow(0 0 12px rgba(0, 200, 255, 0.5)); /* Light Blue */
+  /* ENHANCEMENT: Stronger glow using box-shadow (replacing filter) */
+  box-shadow:
+    0 0 10px rgba(4, 255, 0, 0.8), /* Light Green */
+    0 0 20px rgba(0, 200, 255, 0.5); /* Light Blue */
+  filter: none;
 }
 
-/* Banner / marquee */
 .about_area .banner {
   padding: 17px 25px;
   margin-bottom: 24px;
 }
-
 .about_area .banner .marquee {
   position: relative;
   width: 100%;
@@ -240,7 +207,6 @@ body::before {
   height: 19px;
   overflow-x: hidden;
 }
-
 .about_area .banner .marquee div {
   position: absolute;
   white-space: nowrap;
@@ -248,28 +214,22 @@ body::before {
   font-size: 12px;
   animation: marquee 5s linear infinite;
 }
-
 .about_area .banner .marquee div span {
   font-size: 12px;
   color: var(--text-main-color);
 }
-
 .about_area .banner .marquee div span b {
   color: #fff;
   font-weight: 400;
   margin: 0 5px;
 }
-
 .about_area .banner .marquee div img {
   display: inline-block;
   margin: 0 5px;
 }
-
-/* Info box */
 .about_area .info_box {
   padding: 22px;
 }
-
 .about_area .info_box .overlay_link {
   left: 0;
   top: 0;
@@ -280,7 +240,6 @@ body::before {
   position: absolute;
   z-index: 9;
 }
-
 .about_area .info_box .bg_img {
   opacity: 0.1;
   position: absolute;
@@ -292,7 +251,6 @@ body::before {
   -o-object-fit: cover;
   object-fit: cover;
 }
-
 .about_area .info_box .infos h4 {
   color: var(--text-color);
   font-size: 12px;
@@ -301,26 +259,26 @@ body::before {
   margin-bottom: 12px;
   text-transform: uppercase;
 }
-
 .about_area .info_box .infos h1 {
   font-size: 20px;
   color: var(--white-color);
   font-weight: 500;
 }
-
 .about_area .info_box .about_btn {
   display: block;
   opacity: 0.2;
-  transition: 0.3s;
+  transition: opacity 0.3s, box-shadow 0.3s;
+  /* Added a distinct resting shadow */
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.8));
 }
-
 .about_area .info_box:hover .about_btn {
   opacity: 1;
-  /* Apply the desired light green/blue glow filter */
-  filter: drop-shadow(0 0 8px rgba(4, 255, 0, 0.6)) /* Light Green */
-          drop-shadow(0 0 12px rgba(0, 200, 255, 0.5)); /* Light Blue */
+  /* ENHANCEMENT: Stronger glow using box-shadow (replacing filter) */
+  box-shadow:
+    0 0 10px rgba(4, 255, 0, 0.8), /* Light Green */
+    0 0 20px rgba(0, 200, 255, 0.5); /* Light Blue */
+  filter: none;
 }
-
 .about_area .info_box .icon_boxes {
   display: flex;
   align-items: center;
@@ -333,8 +291,6 @@ body::before {
 .about_area .info_box .icon_boxes img {
   width: 40px;
 }
-
-/* Profile icons */
 .about_area .inner_profile_icons {
   display: flex;
   align-items: center;
@@ -344,7 +300,7 @@ body::before {
   margin-bottom: 16px;
 }
 
-/* ENHANCEMENT: STRONGER 3D/NEUMORPHIC ICONS */
+/* ENHANCEMENT: STRONGER 3D/NEUMORPHIC ICONS (MODIFIED) */
 .about_area .inner_profile_icons a {
   text-decoration: none;
   width: 82px;
@@ -356,42 +312,54 @@ body::before {
   position: relative;
   /* Stronger 3D lift for the circle buttons */
   box-shadow:
-    0 10px 30px -5px rgba(0, 0, 0, 0.5), /* Stronger main shadow */
-    inset 0 0 10px rgba(255, 255, 255, 0.2); /* Inner highlight */
-  border: 1px solid rgba(255, 255, 255, 0.2); /* Sharper border */
+    /* Light source top-left */
+    -5px -5px 15px rgba(255, 255, 255, 0.1),
+    /* Dark shadow bottom-right */
+    5px 5px 15px rgba(0, 0, 0, 0.7),
+    /* Inner highlight/glow */
+    inset 0 0 10px rgba(255, 255, 255, 0.05);
+
+  border: none; /* Removed border to rely on shadows */
   color: #fff;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   flex: none;
   z-index: 1;
 }
-
 .about_area .inner_profile_icons a svg {
   width: 32px;
   height: 32px;
 }
-
 .about_area .inner_profile_icons a:hover {
-  background: var(--white-color);
-  /* Simulating a "press" or "active" 3D state */
+  background: rgba(255, 255, 255, 0.1); /* Subtle color change */
+  /* Simulating a "press" or "active" 3D state (MODIFIED) */
   box-shadow:
-    0 2px 5px rgba(0, 0, 0, 0.6), /* Smaller shadow when 'pressed' */
-    inset 0 0 20px rgba(0, 0, 0, 0.5); /* Darker inner shadow */
-  transform: translateY(1px); /* Slight downward push */
+    /* Inset shadow simulates pressing down */
+    inset 5px 5px 10px rgba(0, 0, 0, 0.8),
+    inset -5px -5px 10px rgba(255, 255, 255, 0.05),
+    /* Stronger outer glow while pressed */
+    0 0 10px rgba(4, 255, 0, 0.5),
+    0 0 15px rgba(0, 200, 255, 0.4);
+
+  transform: scale(0.98); /* Slight inward scale/push */
+  filter: none; /* Rely on box-shadow */
   opacity: 1;
-  /* ENHANCEMENT: Stronger shadow on hover with light green/blue glow */
-  filter: drop-shadow(0 0 8px rgba(4, 255, 0, 0.6)) /* Light Green */
-          drop-shadow(0 0 12px rgba(0, 200, 255, 0.5)); /* Light Blue */
+}
+
+/* ENHANCEMENT: Added active state for deeper push */
+.about_area .inner_profile_icons a:active {
+    transform: scale(0.95); /* Deeper push */
+    box-shadow:
+        inset 7px 7px 15px rgba(0, 0, 0, 1.0),
+        inset -7px -7px 15px rgba(255, 255, 255, 0.02);
 }
 
 .about_area .inner_profile_icons a:hover svg path {
   stroke: #000000;
   opacity: 1;
-  /* ENHANCEMENT: Stronger shadow on hover with light green/blue glow */
-  filter: drop-shadow(0 0 8px rgba(4, 255, 0, 0.6)) /* Light Green */
-          drop-shadow(0 0 12px rgba(0, 200, 255, 0.5)); /* Light Blue */
+  filter: none; /* Removed filter from path */
 }
 
-/* Frosted Glass Background for Icons */
+/* Frosted Glass Background for Icons (MODIFIED) */
 .about_area .inner_profile_icons a::before {
   content: "";
   position: absolute;
@@ -400,46 +368,29 @@ body::before {
   border-radius: 50%;
   z-index: -1;
   /* Stronger frost effect */
-  opacity: 0.2;
-  background: linear-gradient(120deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.2));
-  backdrop-filter: blur(15px); /* Stronger blur */
-  -webkit-backdrop-filter: blur(15px);
+  opacity: 0.25;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(20px) saturate(150%); /* Stronger blur and color saturation */
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
 }
-
-/* Ensure the container-level pseudo-elements exist and are valid */
-.about_area .inner_profile_icons::before,
-.about_area .inner_profile_icons::after {
-  content: "";
-  position: absolute;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
-}
-
-/* Slight opacities for visual layering (kept in separate rules) */
 .about_area .inner_profile_icons::before {
   opacity: 0.1;
 }
 .about_area .inner_profile_icons::after {
   opacity: 0.5;
 }
-
-/* Clients section */
 .about_area .about_client_box .clients {
   gap: 24px;
   z-index: 2;
   position: relative;
 }
-
 .about_area .about_client_box .clients .client_item {
   position: relative;
   border-radius: 30px;
   text-align: center;
   flex: 1;
-  padding: 42px 30px;
+  padding: 42px 30px 42px 30px;
 }
-
 .about_area .about_client_box .clients .client_item h1 {
   color: var(--white-color);
   font-size: 34px;
@@ -447,7 +398,6 @@ body::before {
   line-height: 1.2;
   letter-spacing: -1px;
 }
-
 .about_area .about_client_box .clients .client_item p {
   font-size: 12px;
   color: var(--text-color);
@@ -455,7 +405,6 @@ body::before {
   margin: 0;
   text-transform: uppercase;
 }
-
 .about_area .about_client_box .clients .client_item::before {
   content: "";
   position: absolute;
@@ -468,13 +417,10 @@ body::before {
   background: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
   border-radius: 30px;
 }
-
-/* Contact box */
 .about_area .about_contact_box {
   padding-bottom: 34px;
   padding-top: 83px;
 }
-
 .about_area .about_contact_box .star_icon {
   position: absolute;
   left: 30px;
@@ -482,7 +428,6 @@ body::before {
   opacity: 0.5;
   margin: 0;
 }
-
 .about_area .about_contact_box .star_icon .about_btn {
   display: block;
   position: absolute;
@@ -491,7 +436,6 @@ body::before {
   opacity: 0.2;
   transition: 0.3s;
 }
-
 .about_area .about_contact_box h1 {
   font-size: 44px;
   line-height: 52px;
@@ -499,18 +443,16 @@ body::before {
   color: #fff;
   margin: 0;
 }
-
 .about_area .about_contact_box h1 span {
   color: var(--primary-color);
 }
-
 .about_area .about_contact_box .about_btn {
   display: block;
   opacity: 0.2;
   transition: 0.3s;
 }
 
-/* --- 404 SECTION (ENHANCED 3D TEXT) --- */
+/* --- 404 SECTION (ENHANCED 3D TEXT - MODIFIED) --- */
 .fourohfour_section {
   height: 100vh;
   display: flex;
@@ -519,20 +461,22 @@ body::before {
   justify-content: center;
   padding: 0 20px;
 }
-
 .fourohfour_section h1 {
   font-size: 150px;
   letter-spacing: 1px;
   font-weight: 700;
-  color: black;
+  /* ENHANCEMENT: Multi-layered 3D/Anaglyph Text Effect */
+  color: #ff0000; /* Base color for the shadow layer */
   margin: 0;
-  /* ENHANCEMENT: Stronger 3D text effect */
   text-shadow:
-    -5px -5px 0 #fff, /* Top-left 'light' outline */
-    5px 5px 0 #000, /* Bottom-right 'shadow' outline */
-    10px 10px 20px #555; /* Deeper drop shadow for 3D depth */
+    /* Layer 1: Dark bottom shadow (depth) */
+    8px 8px 1px rgba(0, 0, 0, 0.6),
+    /* Layer 2: White 'light' reflection (shine) */
+    -5px -5px 0 #fff,
+    /* Layer 3: Main text color/glow */
+    0 0 20px rgba(4, 255, 0, 0.6),
+    0 0 30px rgba(0, 200, 255, 0.5);
 }
-
 .fourohfour_section h6 {
   font-size: 160px;
   margin: 0;
@@ -540,13 +484,10 @@ body::before {
   text-transform: uppercase;
   color: rgb(255, 255, 255);
 }
-
 .fourohfour_section p {
   font-size: 20px;
   font-weight: 500;
 }
-
-/* Astronaut floating */
 #astronaut {
   width: 100%;
   max-width: 300px;
@@ -572,7 +513,6 @@ a:hover {
     gap: 30px;
   }
 }
-
 @media (max-width: 1090px) {
   .about_area .info_box .pradip_sign {
     display: flex;
@@ -614,7 +554,6 @@ a:hover {
     margin-bottom: 12px;
   }
 }
-
 @media (max-width: 991px) {
   .about_area .info_box .pradip_sign {
     width: auto;
@@ -630,7 +569,6 @@ a:hover {
     font-size: 18px;
   }
 }
-
 @media (max-width: 585px) {
   .about_area .about_me_box {
     flex-direction: column;
@@ -663,7 +601,6 @@ a:hover {
     font-size: 16px;
   }
 }
-
 @media (max-width: 480px) {
   .about_area .inner_profile_icons {
     gap: 50px;
@@ -676,7 +613,6 @@ a:hover {
     padding-top: 50px;
   }
 }
-
 @media (max-width: 428px) {
   .about_area .inner_profile_icons {
     gap: 40px;
@@ -706,7 +642,6 @@ a:hover {
     font-size: 14px;
   }
 }
-
 @media (max-width: 360px) {
   .about_area .inner_profile_icons a {
     width: 60px;
@@ -734,7 +669,6 @@ a:hover {
     font-size: 12px;
   }
 }
-
 /*# sourceMappingURL=Home.css.map */
 
 /* --- CUSTOM FONTS AND TEXT --- */
@@ -789,6 +723,7 @@ a:hover {
   text-align: center;
   /* ENHANCEMENT: Subtle glow - Light Green/Light Blue */
   text-shadow:
-    0 0 10px rgba(4, 255, 0, 0.6), /* Light Green glow */
+    0 0 10px rgba(4, 255, 0), /* Light Green glow */
     0 0 20px rgba(0, 200, 255, 0.5); /* Light Blue glow, slightly wider */
 }
+/* --- ADVANCED 3D/NEUMORPHIC ENHANCEMENTS END --- */
