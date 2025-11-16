@@ -66,6 +66,40 @@
       })(window.location)
     </script>
 </head>
+<script>
+// Disable Right-Click
+document.addEventListener("contextmenu", e => e.preventDefault());
+
+// Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+document.onkeydown = function (e) {
+  if (e.keyCode === 123) return false; // F12
+
+  if (e.ctrlKey && e.shiftKey && e.keyCode === 73) return false; // Ctrl+Shift+I
+  if (e.ctrlKey && e.shiftKey && e.keyCode === 74) return false; // Ctrl+Shift+J
+
+  if (e.ctrlKey && e.keyCode === 85) return false; // Ctrl+U
+};
+
+// Detect DevTools Opening (Safest version for React)
+(function() {
+  let opened = false;
+  const threshold = 170;
+
+  setInterval(() => {
+    const widthDiff = window.outerWidth - window.innerWidth;
+    const heightDiff = window.outerHeight - window.innerHeight;
+
+    if ((widthDiff > threshold || heightDiff > threshold)) {
+      if (!opened) {
+        opened = true;
+        document.body.innerHTML = ""; // Clear page
+        window.location.href = "/404"; // OR: window.location.reload();
+      }
+    }
+  }, 500);
+})();
+</script>
+
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
