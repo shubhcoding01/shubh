@@ -5,17 +5,46 @@
   width: 100%;
   height: 100vh;
 }
+
+/* 🔥 GLOW + ANIMATION ADDED HERE */
 .preloader img {
   width: 150px;
+
+  /* Static glow */
+  filter: drop-shadow(0 0 8px rgba(4, 255, 0, 1))
+          drop-shadow(0 0 12px rgba(0, 200, 255, 0.6));
+
+  /* Animated pulsing glow */
+  animation: glowPulse 3s ease-in-out infinite;
 }
+
 .preloader h1 {
   font-family: "Remachine Script Personal Use" !important;
   color: white;
   font-size: 60px;
 }
 
+/* 🔥 Glow animation keyframes */
+@keyframes glowPulse {
+  0% {
+    filter: drop-shadow(0 0 6px rgba(4, 255, 0, 0.8))
+            drop-shadow(0 0 10px rgba(0, 200, 255, 0.4));
+    transform: scale(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 14px rgba(4, 255, 0, 1))
+            drop-shadow(0 0 20px rgba(0, 200, 255, 0.8));
+    transform: scale(1.06);
+  }
+  100% {
+    filter: drop-shadow(0 0 6px rgba(4, 255, 0, 0.8))
+            drop-shadow(0 0 10px rgba(0, 200, 255, 0.4));
+    transform: scale(1);
+  }
+}
+
 @media (max-width: 480px) {
   .preloader img {
     width: 150px;
   }
-}/*# sourceMappingURL=Loading.css.map */
+}
