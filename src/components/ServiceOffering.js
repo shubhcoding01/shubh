@@ -16,7 +16,7 @@ const AboutMe = () => {
             <Link to="/service" className='overlay_link'></Link>
             <img src={textureImg} alt="bg" className='bg_img' />
             <div className="icon_boxes">
-                <img src={camera} alt="camera" />
+                <img src={security} alt="security" />
                 <img src={figma} alt="figma" />
                 <img src={design} alt="design" />
                 <img src={code} alt="code" />
