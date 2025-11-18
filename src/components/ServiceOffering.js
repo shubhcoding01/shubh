@@ -17,7 +17,7 @@ const AboutMe = () => {
             <img src={textureImg} alt="bg" className='bg_img' />
             <div className="icon_boxes">
                 <img src={security} alt="security" />
-                <img src={figma} alt="figma" />
+                <img src={backend} alt="backend" />
                 <img src={design} alt="design" />
                 <img src={code} alt="code" />
             </div>
