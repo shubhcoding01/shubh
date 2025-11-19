@@ -12,7 +12,6 @@ import WorkTogether from '../components/WorkTogether'
 import { Link } from 'react-router-dom'
 import Footer from '../components/Footer'
 
-
 const MoreAboutMe = () => {
 
     return (
