@@ -1,4 +1,4 @@
- import React from 'react'
+import React from 'react'
 import textureImg from '../resources/images/background_texture.png'
 import Pradip from '../sshubh/profilebw.jpg'
 import Star from '../resources/images/star-2.png'
@@ -11,7 +11,6 @@ import AboutMe from '../components/AboutMe'
 import WorkTogether from '../components/WorkTogether'
 import { Link } from 'react-router-dom'
 import Footer from '../components/Footer'
-
 
 const MoreAboutMe = () => {
 
