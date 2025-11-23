@@ -101,9 +101,9 @@ const MoreAboutMe = () => {
                                     <li>
                                         <p className="date">2022 - 2025</p>
                                         <h2>Bachelor of Computer Applications (BCA)</h2>
-                                        <p className="type">CIMAGE Professional College, Patna</p>
+                                        <p className="type">Aryabhatta Knowledge University, Patna</p>
                                         <p className="desc">
-                                            Graduated with <span className="font-semibold">8.31 CGPA</span> under Aryabhatta Knowledge University.  
+                                            {/* Graduated with <span className="font-semibold">8.31 CGPA</span> under Aryabhatta Knowledge University.   */}
                                             Focused on Java, C++, Database Management, and Web Development.
                                         </p>
                                     </li>
