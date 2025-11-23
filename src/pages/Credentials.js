@@ -168,7 +168,7 @@ const Credentials = () => {
                 <div className="credential_edc_exp_item" data-aos="zoom-in">
                   <h4>2022 - 2025</h4>
                   <h3>Bachelor of Computer Applications (BCA)</h3>
-                  <h5>CIMAGE Professional College – Aryabhatta Knowledge University</h5>
+                  <h5>Aryabhatta Knowledge University</h5>
                 </div>
 
                 <div className="credential_edc_exp_item" data-aos="zoom-in">
