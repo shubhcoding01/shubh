@@ -202,7 +202,7 @@ const Credentials = () => {
                   ))}
                 </div>
               </div>
-
+                  <br />
               {/* Certifications */}
               <div className="credential_edc_exp credential_certifications">
                 <h2 data-aos="fade-up">Certifications & Achievements</h2>
