@@ -46,7 +46,7 @@ const MoreAboutMe = () => {
                                     I work primarily with <span className="font-semibold">React.js</span> and <span className="font-semibold">Spring Boot</span>,  
                                     integrating clean frontend design with powerful backend logic.  
                                     <br /><br />
-                                    Having completed my <span className="font-semibold">BCA in 2025</span> from CIMAGE Professional College, I’ve built projects ranging from 
+                                    Having completed my <span className="font-semibold">BCA in 2025</span> from Aryabhatta Knowledge University, I’ve built projects ranging from 
                                     full-fledged e-commerce platforms to content dashboards and internal management systems.  
                                     <br /><br />
                                     I’m also exploring <span className="font-semibold">Cybersecurity</span> to deepen my understanding of how systems can stay both efficient and secure.  
