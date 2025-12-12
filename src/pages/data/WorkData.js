@@ -62,7 +62,7 @@ const WorkData = [
   image: Cyberthical,
   bannerImage: CyberthicalBanner,
   name: "Cyberthical",
-  title: "Cybersecurity & Ethical Hacking Learning Platform",
+  title: "Cybersecurity Learning & Services Platform",
   slug: "cyberthical",
   liveLink: "https://cyberthical.com",
   image1: Cyberthical1,
@@ -70,7 +70,7 @@ const WorkData = [
   image3: Cyberthical3,
   image4: Cyberthical4,
   detailsInfo:
-    "A dedicated cybersecurity learning platform designed to provide resources and tutorials on ethical hacking, network defense, and digital security. The platform features curated learning paths for aspiring security professionals and hosts a variety of educational content. Built for performance and scalability using modern web technologies.",
+    "A dual-purpose platform designed to provide expert cybersecurity services while fostering a community of learners. Cyberthical offers professional security solutions for clients and features curated learning paths, tutorials, and resources on ethical hacking and network defense for aspiring professionals.",
   techStack: {
     frontend: "Next.js, React, Tailwind CSS",
     backend: "Firebase (Hosting & Functions)",
