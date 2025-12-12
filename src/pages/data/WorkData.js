@@ -59,7 +59,7 @@ import Cyberthical4 from "../../resources/images/work-data/Cyberthical/Cyberthic
 const WorkData = [
   {
   id: "cyberthical-project",
-  image: Cyberthical,
+  image: CyberthicalThumb,
   bannerImage: CyberthicalBanner,
   name: "Cyberthical",
   title: "Cybersecurity Learning & Services Platform",
