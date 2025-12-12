@@ -85,6 +85,28 @@ const WorkData = [
     database: "Firestore / Realtime Database",
     otherTools: "Git, Linux, Security Tools",
   },
+  nextProject: "mindlink",
+},
+{
+  id: "mindlink-project",
+  image: MindlinkThumb,
+  bannerImage: MindlinkBanner,
+  name: "MindLink",
+  title: "Mindlink: The Gemini AI-Powered Full Stack Platform",
+  slug: "mindlink",
+  liveLink: "https://github.com/shubhcoding01/mindlink", // Add your live link here if available
+  image1: Mindlink1,
+  image2: Mindlink2,
+  image3: Mindlink3,
+  image4: Mindlink4,
+  detailsInfo:
+    "A cutting-edge full-stack application where the backend is architected entirely around **Google Gemini AI**. The project leverages **Python** for backend logic and **Docker** for containerization. On the frontend, it delivers a highly interactive user experience using **Next.js** and **GSAP** for smooth, complex animations.",
+  techStack: {
+    frontend: "Next.js, React, GSAP, Tailwind CSS",
+    backend: "Python, Google Gemini AI",
+    database: "PostgreSQL / MongoDB", // Update if using a specific DB
+    otherTools: "Docker, Git, Axios",
+  },
   nextProject: "ecommerce-platform",
 },
   {
@@ -221,7 +243,7 @@ const WorkData = [
       backend: "Node.js, NestJS",
       otherTools: "GSAP, Open Source Contribution",
     },
-    nextProject: "ecommerce-platform",
+    nextProject: "cyberthical",
   },
 ];
 
