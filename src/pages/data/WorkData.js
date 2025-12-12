@@ -77,7 +77,7 @@ const WorkData = [
     database: "Firestore / Realtime Database",
     otherTools: "Git, Linux, Security Tools",
   },
-  nextProject: "ecommerce-project",
+  nextProject: "ecommerce-platform",
 },
   {
     id: "ecommerce-project",
