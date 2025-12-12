@@ -58,6 +58,28 @@ import Cyberthical4 from "../../resources/images/work-data/Cyberthical/Cyberthic
 
 const WorkData = [
   {
+  id: "cyberthical-project",
+  image: Cyberthical,
+  bannerImage: CyberthicalBanner,
+  name: "Cyberthical",
+  title: "Cybersecurity & Ethical Hacking Learning Platform",
+  slug: "cyberthical",
+  liveLink: "https://cyberthical.com",
+  image1: Cyberthical1,
+  image2: Cyberthical2,
+  image3: Cyberthical3,
+  image4: Cyberthical4,
+  detailsInfo:
+    "A dedicated cybersecurity learning platform designed to provide resources and tutorials on ethical hacking, network defense, and digital security. The platform features curated learning paths for aspiring security professionals and hosts a variety of educational content. Built for performance and scalability using modern web technologies.",
+  techStack: {
+    frontend: "Next.js, React, Tailwind CSS",
+    backend: "Firebase (Hosting & Functions)",
+    database: "Firestore / Realtime Database",
+    otherTools: "Git, Linux, Security Tools",
+  },
+  nextProject: "ecommerce-project",
+},
+  {
     id: "ecommerce-project",
     image: Ecommerce,
     bannerImage: EcommerceBanner,
