@@ -54,6 +54,14 @@ import Cyberthical2 from "../../resources/images/work-data/Cyberthical/Cyberthic
 import Cyberthical3 from "../../resources/images/work-data/Cyberthical/Cyberthical3.png";
 import Cyberthical4 from "../../resources/images/work-data/Cyberthical/Cyberthical4.png";
 
+// Mindlink
+import MindlinkThumb from "../../resources/images/work-data/Mindlink/MindlinkTHUMBNAIL.png";
+import MindlinkBanner from "../../resources/images/work-data/Mindlink/MindlinkBANNER.png";
+import Mindlink1 from "../../resources/images/work-data/Mindlink/Mindlink1.png";
+import Mindlink2 from "../../resources/images/work-data/Mindlink/Mindlink2.png";
+import Mindlink3 from "../../resources/images/work-data/Mindlink/Mindlink3.png";
+import Mindlink4 from "../../resources/images/work-data/Mindlink/Mindlink4.png";
+
 // ==================== PROJECT DATA ====================
 
 const WorkData = [
