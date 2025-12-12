@@ -46,6 +46,14 @@ import sccoffeeShop2 from "../../resources/images/work-data/sccoffee/sccoffee2.p
 import sccoffeeShop3 from "../../resources/images/work-data/sccoffee/sccoffee3.png";
 import sccoffeeShop4 from "../../resources/images/work-data/sccoffee/sccoffee4.png";
 
+// Cyberthical
+import CyberthicalThumb from "../../resources/images/work-data/Cyberthical/CyberthicalTHUMBNAIL.png";
+import CyberthicalBanner from "../../resources/images/work-data/Cyberthical/CyberthicalBANNER.png";
+import Cyberthical1 from "../../resources/images/work-data/Cyberthical/Cyberthical1.png";
+import Cyberthical2 from "../../resources/images/work-data/Cyberthical/Cyberthical2.png";
+import Cyberthical3 from "../../resources/images/work-data/Cyberthical/Cyberthical3.png";
+import Cyberthical4 from "../../resources/images/work-data/Cyberthical/Cyberthical4.png";
+
 // ==================== PROJECT DATA ====================
 
 const WorkData = [
