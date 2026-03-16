@@ -18,13 +18,42 @@ const AboutMe = () => {
                     <svg width="16px" height="16px" strokeWidth="1.6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFFFFF"><path d="M21 8v8a5 5 0 01-5 5H8a5 5 0 01-5-5V8a5 5 0 015-5h8a5 5 0 015 5zM7 17v-7" stroke="#FFFFFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"></path><path d="M11 17v-3.25M11 10v3.75m0 0c0-3.75 6-3.75 6 0V17M7 7.01l.01-.011" stroke="#FFFFFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"></path></svg>
                 </Link>
                 {/* Instagram Link (NEW) */}
-                <Link to="https://www.instagram.com/shubh1.yadav/" target='_blank'> 
+                {/* <Link to="https://www.instagram.com/shubh1.yadav/" target='_blank'> 
                     <svg width="16px" height="16px" strokeWidth="1.6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFFFFF">
                         <path d="M12 16a4 4 0 100-8 4 4 0 000 8z" stroke="#FFFFFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"></path>
                         <path d="M3 16V8a5 5 0 015-5h8a5 5 0 015 5v8a5 5 0 01-5 5H8a5 5 0 01-5-5z" stroke="#FFFFFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"></path>
                         <path d="M17.5 7.5L17.51 7.5" stroke="#FFFFFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"></path>
                     </svg>
+                </Link> */}
+                <Link to="https://cyberthical.com/" target='_blank'>
+                <img
+                                      src="../sshubh/CyberthiCalgreen.png"
+                                      alt="Cyberthical"
+                                      width="32px"
+                                      height="32px"
+                                      
+                                      // FIX: Force the image to ignore any CSS filters making it white
+                                      
+                                    />
+                    {/* <svg width="16px" height="16px" strokeWidth="1.6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFFFFF"><path d="M21 8v8a5 5 0 01-5 5H8a5 5 0 01-5-5V8a5 5 0 015-5h8a5 5 0 015 5zM7 17v-7" stroke="#FFFFFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"></path><path d="M11 17v-3.25M11 10v3.75m0 0c0-3.75 6-3.75 6 0V17M7 7.01l.01-.011" stroke="#FFFFFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"></path></svg> */}
                 </Link>
+                                  {/* <Link
+                                    className="shadow_box"
+                                    to="https://www.cyberthical.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    <img
+                                      src="../sshubh/CyberthiCalgreen.png"
+                                      alt="Cyberthical"
+                                      width="32px"
+                                      height="32px"
+                                      className="DevDisplay-icon"
+                                      // FIX: Force the image to ignore any CSS filters making it white
+                                      style={{ filter: "none", objectFit: "contain" }} 
+                                    />
+                                  </Link> */}
+                                
                 {/* X/Twitter Link */}
                 <Link to="https://x.com/shubh__coding" target='_blank'>
                     <svg width="16px" height="16px" strokeWidth="1.6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFFFFF"><path d="M23 3.01s-2.018 1.192-3.14 1.53a4.48 4.48 0 00-7.86 3v1a10.66 10.66 0 01-9-4.53s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5 0-.278-.028-.556-.08-.83C21.94 5.674 23 3.01 23 3.01z" stroke="#FFFFFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"></path></svg>
